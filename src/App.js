@@ -25,7 +25,7 @@ function App() {
         <Projects />
         <About />
         <Contact />
-      </.div>
+      </div>
       <FooterBG />
     </>
   )
