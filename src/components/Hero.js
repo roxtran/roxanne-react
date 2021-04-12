@@ -73,7 +73,7 @@ const HeroHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 13.5rem;
+  margin-bottom: 15rem;
 `
 
 export default Hero
