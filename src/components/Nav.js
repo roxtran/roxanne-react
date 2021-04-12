@@ -8,7 +8,7 @@ const Nav = () => {
       <ul>
         <li>
           <Scroll
-            to='hero'
+            to='skills'
             smooth={true}
             duration={500}
             spy={true}
