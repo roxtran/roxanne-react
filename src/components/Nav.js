@@ -65,7 +65,7 @@ const Scroll = styled(LinkS)`
   &:hover {
     color: #ffd803;
   }
-  &:active {
+  &.active {
     color: #ffd803;
   }
 `
