@@ -74,13 +74,13 @@ const StyledNav = styled.nav`
   width: 300px;
   margin-left: -300px;
   position: sticky;
-  top: 60px;
+  top: 30px;
   z-index: 9;
   font-size: 1.1rem;
   font-weight: bold;
 
   ul {
-    margin-top: 60px;
+    margin-top: 30px;
     list-style: none;
   }
 

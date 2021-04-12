@@ -47,7 +47,7 @@ const Hero = () => {
 const StyledHero = styled.div`
   position: relative;
   width: 100%;
-  min-height: 89vh;
+  min-height: 92vh;
   margin-top: -220px;
   /* padding-top: 58px; */
   /* h1 {

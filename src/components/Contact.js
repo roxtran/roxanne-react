@@ -130,7 +130,7 @@ const Social = styled.div`
   width: 300px;
   margin-left: -300px;
   position: absolute;
-  bottom: 10rem;
+  bottom: 12rem;
   ul {
     list-style: none;
   }
