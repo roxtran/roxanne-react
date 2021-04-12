@@ -38,6 +38,9 @@ const StyledHero = styled.div`
 
   @media (max-width: 1000px) {
     margin-top: -60px;
+    img {
+      max-width: 120%;
+    }
   }
 `
 const HeroHeader = styled.div`

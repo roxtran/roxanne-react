@@ -50,6 +50,9 @@ const ImgBG = styled.div`
   position: absolute;
   left: -18%;
   top: 58%;
+  img {
+    max-width: 200px;
+  }
 `
 
 const ProjectsGrid = styled.div`
@@ -59,6 +62,7 @@ const ProjectsGrid = styled.div`
 
   @media (max-width: 670px) {
     grid-template-columns: 1fr;
+    grid-row-gap: 3.75rem;
   }
 
   a {
@@ -72,27 +76,26 @@ const ProjectsGrid = styled.div`
     }
     img {
       max-width: 100%;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
   }
 
   a:nth-child(odd) {
     margin-top: -3.75rem;
-
     @media (max-width: 670px) {
-      margin-top: 0px;
+      margin-top: 0;
     }
   }
 
   a:nth-child(even) {
     margin-top: 3.75rem;
+    @media (max-width: 670px) {
+      margin-top: 0;
+    }
   }
 
   a:last-child {
     margin-top: 0;
-
-    @media (max-width: 670px) {
-      margin-top: 3.75rem;
-    }
   }
 
   h3 {
