@@ -1,20 +1,33 @@
 import React from 'react'
 import styled from 'styled-components'
 import circle1 from '../img/circle1.png'
+import { motion } from 'framer-motion'
+import { slideUp, circle1Amin } from './animation'
 
 const Hero = () => {
   return (
     <StyledHero id='hero'>
-      <HeroHeader>
-        <h3>
+      <HeroHeader className='hidden'>
+        <motion.h3 variants={slideUp}>
           Roxanne<span>.</span>
-        </h3>
-        <a href='mailto:tran.rox@gmail.com?subject=Info'>
+        </motion.h3>
+        <motion.a
+          variants={slideUp}
+          href='mailto:tran.rox@gmail.com?subject=Info'
+        >
           Let's Start a Project
-        </a>
+        </motion.a>
       </HeroHeader>
-      <h1>Full Stack Digital Designer & Developer</h1>
-      <img src={circle1} alt='circle1' />
+      <div className='hide'>
+        <motion.h1 variants={slideUp}>Full Stack</motion.h1>
+      </div>
+      <div className='hide'>
+        <motion.h1 variants={slideUp}>Digital Designer</motion.h1>
+      </div>
+      <div className='hide'>
+        <motion.h1 variants={slideUp}>& Developer</motion.h1>
+      </div>
+      <motion.img variants={circle1Amin} src={circle1} alt='circle1' />
     </StyledHero>
   )
 }
@@ -48,6 +61,7 @@ const HeroHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 13.5rem;
 `
 
 export default Hero

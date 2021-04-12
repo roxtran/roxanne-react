@@ -6,19 +6,26 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'
 import styled from 'styled-components'
 import GlobalStyle from './components/GlobalStyle'
+import { motion } from 'framer-motion'
+import { pageAnimation } from './components/animation'
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <div className='container'>
+      <motion.div
+        className='container'
+        variants={pageAnimation}
+        initial='hidden'
+        animate='show'
+      >
         <Nav />
         <Hero />
         <Skills />
         <Projects />
         <About />
         <Footer />
-      </div>
+      </motion.div>
       <FooterBG />
     </>
   )

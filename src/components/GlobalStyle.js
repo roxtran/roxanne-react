@@ -26,7 +26,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    margin-top: 13.5rem;
     font-size: 3.75rem;
     line-height: 4.85rem;
     color: #272343;
@@ -71,6 +70,10 @@ const GlobalStyle = createGlobalStyle`
 
   span {
     color: #ffd803;
+  }
+
+  .hide {
+    overflow: hidden;
   }
 `
 

@@ -1,10 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
+import { slideUp, fade } from './animation'
 
 const Skills = () => {
   return (
     <StyledSkills id='skills'>
-      <h2>Multidisciplinary digital designer & developer</h2>
+      <motion.h2 variants={slideUp}>
+        Multidisciplinary digital designer & developer
+      </motion.h2>
       <SkillsGrid>
         <h3>User Interface</h3>
         <p>
