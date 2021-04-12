@@ -12,7 +12,8 @@ const GlobalStyle = createGlobalStyle`
   body {
     background: #fffffe;
     color: #2d334a;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.45rem;
     overflow-x: hidden;
   }
 
