@@ -88,6 +88,7 @@ const Card = styled.a`
   margin-right: 4rem;
   padding: 2rem;
   cursor: pointer;
+  text-decoration: none;
   img {
     margin-bottom: 3rem;
   }
