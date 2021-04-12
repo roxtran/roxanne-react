@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion'
-
 export const pageAnimation = {
   hidden: {
     opacity: 0

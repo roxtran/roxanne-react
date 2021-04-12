@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link as LinkS } from 'react-scroll'
 import { motion } from 'framer-motion'
-import { slideUp, fade } from './animation'
+import { slideUp } from './animation'
 
 const Nav = () => {
   return (
