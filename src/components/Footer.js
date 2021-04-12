@@ -33,7 +33,7 @@ const Footer = () => {
         Let's talk about your product
       </a>
       <Cards>
-        <Card>
+        <Card href='mailto:tran.rox@gmail.com?subject=Consulting'>
           <img src={consult} alt='consulting' />
           <h4>Consulting</h4>
           <p>
@@ -41,7 +41,7 @@ const Footer = () => {
             existing products and brands.
           </p>
         </Card>
-        <Card>
+        <Card href='mailto:tran.rox@gmail.com?subject=Design Concept'>
           <img src={design} alt='design concept' />
           <h4>Try a Design Concept</h4>
           <p>
