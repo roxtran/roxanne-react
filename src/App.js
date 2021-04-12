@@ -6,14 +6,14 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'
 import styled from 'styled-components'
 import GlobalStyle from './components/GlobalStyle'
-import { motion } from 'framer-motion'
-import { pageAnimation } from './components/animation'
+// import { motion } from 'framer-motion'
+// import { pageAnimation } from './components/animation'
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <motion.div
+      <div
         className='container'
         // variants={pageAnimation}
         // initial='hidden'
@@ -25,7 +25,7 @@ function App() {
         <Projects />
         <About />
         <Contact />
-      </motion.div>
+      </.div>
       <FooterBG />
     </>
   )
