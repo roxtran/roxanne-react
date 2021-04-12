@@ -41,6 +41,21 @@ const FooterBG = styled.div`
     height: 1400px;
     margin-top: -1400px;
   }
+
+  @media (max-width: 800px) {
+    height: 1100px;
+    margin-top: -1100px;
+  }
+
+  @media (max-width: 540px) {
+    height: 1350px;
+    margin-top: -1350px;
+  }
+
+  @media (max-width: 320px) {
+    height: 1500px;
+    margin-top: -1500px;
+  }
 `
 
 export default App

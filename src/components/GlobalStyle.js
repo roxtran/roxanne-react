@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
     background: #fffffe;
     color: #2d334a;
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
   }
 
   .container {
@@ -20,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
     max-width: 1100px;
     padding-left: 300px;
 
-    @media (max-width: 1000px) {
+    @media (max-width: 1024px) {
       padding: 5rem 2rem 0rem 2rem;
     }
   }
@@ -52,6 +53,10 @@ const GlobalStyle = createGlobalStyle`
     @media (max-width: 1000px) {
       font-size: 1.25rem;
     }
+
+    @media (max-width: 320px) {
+      font-size: 1rem;
+    }
   }
 
   h4 {
@@ -65,6 +70,10 @@ const GlobalStyle = createGlobalStyle`
 
     &:hover {
       color: #272343;
+    }
+
+    @media (max-width: 320px) {
+      font-size: 1rem;
     }
   }
 
