@@ -1,14 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link as LinkS } from 'react-scroll'
-import { motion } from 'framer-motion'
-import { slideUp } from './animation'
 
 const Nav = () => {
   return (
     <StyledNav>
       <ul>
-        <motion.li variants={slideUp}>
+        <li>
           <Scroll
             to='hero'
             smooth={true}
@@ -19,8 +17,8 @@ const Nav = () => {
           >
             Digital Designer & Developer
           </Scroll>
-        </motion.li>
-        <motion.li variants={slideUp}>
+        </li>
+        <li>
           <Scroll
             to='projects'
             smooth={true}
@@ -31,8 +29,8 @@ const Nav = () => {
           >
             Completed Projects
           </Scroll>
-        </motion.li>
-        <motion.li variants={slideUp}>
+        </li>
+        <li>
           <Scroll
             to='about'
             smooth={true}
@@ -43,8 +41,8 @@ const Nav = () => {
           >
             About Me
           </Scroll>
-        </motion.li>
-        <motion.li variants={slideUp}>
+        </li>
+        <li>
           <Scroll
             to='contact'
             smooth={true}
@@ -55,7 +53,7 @@ const Nav = () => {
           >
             Consulting & Concepts
           </Scroll>
-        </motion.li>
+        </li>
       </ul>
     </StyledNav>
   )
