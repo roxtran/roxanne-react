@@ -30,7 +30,7 @@ export const circle1Amin = {
   show: {
     opacity: 1,
     x: 0,
-    transition: { duration: 1 }
+    transition: { duration: 0.5 }
   }
 }
 
