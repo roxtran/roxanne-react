@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 0.5s ease-out;
+  transition: all 0.4s ease-out;
   }
 
   body {

@@ -65,7 +65,7 @@ const ProjectsGrid = styled.div`
     align-items: center;
     max-width: 100%;
     &:hover {
-      box-shadow: 1px;
+      color: #ffd803;
     }
     img {
       max-width: 100%;
