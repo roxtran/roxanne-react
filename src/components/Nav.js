@@ -46,7 +46,7 @@ const Nav = () => {
         </motion.li>
         <motion.li variants={slideUp}>
           <Scroll
-            to='consult'
+            to='contact'
             smooth={true}
             duration={500}
             spy={true}

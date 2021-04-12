@@ -13,7 +13,6 @@ const GlobalStyle = createGlobalStyle`
     background: #fffffe;
     color: #2d334a;
     font-family: 'Montserrat', sans-serif;
-    line-height: 1.45rem;
     overflow-x: hidden;
   }
 
@@ -80,6 +79,10 @@ const GlobalStyle = createGlobalStyle`
 
   span {
     color: #ffd803;
+  }
+
+  p {
+    line-height: 1.45rem;
   }
 
   .hide {

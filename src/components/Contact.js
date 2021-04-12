@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import consult from '../img/consulting.png'
-import design from '../img/design.png'
+import consult from '../img/consult.gif'
+import design from '../img/design.gif'
 import circle3 from '../img/circle3.png'
 
-const Footer = () => {
+const Contact = () => {
   return (
-    <StyledFooter id='consult'>
+    <StyledContact id='contact'>
       <Social>
         <h3>Social</h3>
         <ul>
@@ -53,16 +53,16 @@ const Footer = () => {
       <ImgBG>
         <img src={circle3} alt='circle3' />
       </ImgBG>
-    </StyledFooter>
+    </StyledContact>
   )
 }
 
-const StyledFooter = styled.div`
+const StyledContact = styled.div`
   background: #bae8e8;
   height: 1070px;
   position: relative;
   h2 {
-    max-width: 450px;
+    max-width: 500px;
     padding-top: 11rem;
   }
 
@@ -95,7 +95,7 @@ const Card = styled.a`
   background: white;
   width: 270px;
   height: 100%;
-  margin-right: 4rem;
+  margin-right: 4.5rem;
   padding: 2rem;
   cursor: pointer;
   text-decoration: none;
@@ -107,6 +107,7 @@ const Card = styled.a`
   }
 
   img {
+    max-width: 36px;
     margin-bottom: 3rem;
   }
   h4 {
@@ -115,7 +116,7 @@ const Card = styled.a`
   }
   p {
     margin-bottom: 1rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #2d334a;
     font-weight: normal;
   }
@@ -145,4 +146,4 @@ const Social = styled.div`
   }
 `
 
-export default Footer
+export default Contact
