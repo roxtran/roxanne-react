@@ -45,10 +45,10 @@ const SkillsGrid = styled.div`
 
   @media (max-width: 670px) {
     grid-template-columns: 1fr;
-    grid-row-gap: 1rem;
+    grid-row-gap: 1.25rem;
 
     p {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
     }
   }
 `
