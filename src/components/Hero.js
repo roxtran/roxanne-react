@@ -19,15 +19,27 @@ const Hero = () => {
         </motion.a>
       </HeroHeader>
       <div className='hide'>
-        <motion.h1 variants={slideUp}>Full Stack</motion.h1>
+        <motion.h1 variants={slideUp} initial='hidden' animate='show'>
+          Full Stack
+        </motion.h1>
       </div>
       <div className='hide'>
-        <motion.h1 variants={slideUp}>Digital Designer</motion.h1>
+        <motion.h1 variants={slideUp} initial='hidden' animate='show'>
+          Digital Designer
+        </motion.h1>
       </div>
       <div className='hide'>
-        <motion.h1 variants={slideUp}>& Developer</motion.h1>
+        <motion.h1 variants={slideUp} initial='hidden' animate='show'>
+          & Developer
+        </motion.h1>
       </div>
-      <motion.img variants={circle1Amin} src={circle1} alt='circle1' />
+      <motion.img
+        variants={circle1Amin}
+        initial='hidden'
+        animate='show'
+        src={circle1}
+        alt='circle1'
+      />
     </StyledHero>
   )
 }
