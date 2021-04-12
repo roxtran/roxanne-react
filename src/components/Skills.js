@@ -42,7 +42,11 @@ const SkillsGrid = styled.div`
   grid-template-columns: 0.6fr 1fr;
   grid-row-gap: 4.35rem;
   grid-column-gap: 1rem;
-  
+
+  @media (max-width: 670px) {
+    grid-template-columns: 1fr;
+    grid-row-gap: 2rem;
+  }
 `
 
 export default Skills

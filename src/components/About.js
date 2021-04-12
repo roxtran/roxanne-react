@@ -23,6 +23,11 @@ const StyledAbout = styled.div`
   display: grid;
   grid-template-columns: 0.6fr 1fr;
   margin-bottom: 150px;
+
+  @media (max-width: 670px) {
+    grid-template-columns: 1fr;
+  }
+
   p {
     font-size: 1.1rem;
   }

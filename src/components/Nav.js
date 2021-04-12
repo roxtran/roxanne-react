@@ -87,6 +87,17 @@ const StyledNav = styled.nav`
   li {
     margin: 2rem 0rem;
   }
+
+  @media (max-width: 1500px) {
+    top: 40px;
+    ul {
+      margin-top: 40px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `
 
 export default Nav

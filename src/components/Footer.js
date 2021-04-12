@@ -65,6 +65,10 @@ const StyledFooter = styled.div`
     max-width: 450px;
     padding-top: 11rem;
   }
+
+  @media (max-width: 670px) {
+    height: 100%;
+  }
 `
 const ImgBG = styled.div`
   position: absolute;
@@ -79,6 +83,7 @@ const Cards = styled.div`
   display: flex;
   margin-top: 11rem;
   justify-content: flex-start;
+  flex-wrap: wrap;
 `
 
 const Card = styled.a`
@@ -89,6 +94,13 @@ const Card = styled.a`
   padding: 2rem;
   cursor: pointer;
   text-decoration: none;
+
+  @media (max-width: 670px) {
+    margin-right: 0rem;
+    margin-bottom: 4rem;
+    width: 90%;
+  }
+
   img {
     margin-bottom: 3rem;
   }

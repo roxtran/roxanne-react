@@ -19,6 +19,10 @@ const GlobalStyle = createGlobalStyle`
     margin: 0 auto;
     max-width: 1100px;
     padding-left: 300px;
+
+    @media (max-width: 1000px) {
+      padding: 5rem 2rem 0rem 2rem;
+    }
   }
 
   h1 {
@@ -26,6 +30,11 @@ const GlobalStyle = createGlobalStyle`
     font-size: 3.75rem;
     line-height: 4.85rem;
     color: #272343;
+
+    @media (max-width: 1000px) {
+      font-size: 3rem;
+      line-height: 3.9rem;
+    }
   }
 
   h2 {

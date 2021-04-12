@@ -57,6 +57,10 @@ const ProjectsGrid = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 3.75rem;
 
+  @media (max-width: 670px) {
+    grid-template-columns: 1fr;
+  }
+
   a {
     color: white;
     position: relative;
@@ -65,7 +69,6 @@ const ProjectsGrid = styled.div`
     align-items: center;
     max-width: 100%;
     &:hover {
-      
     }
     img {
       max-width: 100%;
@@ -74,6 +77,10 @@ const ProjectsGrid = styled.div`
 
   a:nth-child(odd) {
     margin-top: -3.75rem;
+
+    @media (max-width: 670px) {
+      margin-top: 0px;
+    }
   }
 
   a:nth-child(even) {
@@ -82,6 +89,10 @@ const ProjectsGrid = styled.div`
 
   a:last-child {
     margin-top: 0;
+
+    @media (max-width: 670px) {
+      margin-top: 3.75rem;
+    }
   }
 
   h3 {

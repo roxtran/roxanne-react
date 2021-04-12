@@ -29,6 +29,11 @@ const FooterBG = styled.div`
   background: #bae8e8;
   height: 1070px;
   margin-top: -1070px;
+
+  @media (max-width: 1000px) {
+    height: 1405px;
+    margin-top: -1405px;
+  }
 `
 
 export default App

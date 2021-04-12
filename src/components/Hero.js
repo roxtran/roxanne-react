@@ -35,6 +35,10 @@ const StyledHero = styled.div`
     top: 27%;
     right: 0;
   }
+
+  @media (max-width: 1000px) {
+    margin-top: -60px;
+  }
 `
 const HeroHeader = styled.div`
   display: flex;
