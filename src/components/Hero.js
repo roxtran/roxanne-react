@@ -6,8 +6,12 @@ const Hero = () => {
   return (
     <StyledHero id='hero'>
       <HeroHeader>
-        <h3>Roxanne<span>.</span></h3>
-        <a href='/#'>Let's Start a Project</a>
+        <h3>
+          Roxanne<span>.</span>
+        </h3>
+        <a href='mailto:tran.rox@gmail.com?subject=Info'>
+          Let's Start a Project
+        </a>
       </HeroHeader>
       <h1>Full Stack Digital Designer & Developer</h1>
       <img src={circle1} alt='circle1' />
@@ -18,7 +22,7 @@ const Hero = () => {
 const StyledHero = styled.div`
   position: relative;
   width: 100%;
-  min-height: 90vh;
+  min-height: 89vh;
   margin-top: -230px;
   /* padding-top: 58px; */
   h1 {
@@ -35,14 +39,6 @@ const StyledHero = styled.div`
 const HeroHeader = styled.div`
   display: flex;
   justify-content: space-between;
-  span {
-    color: #ffd803;
-  }
-  a {
-    color: #ffd803;
-    font-size: 1.1rem;
-    text-decoration: underline;
-  }
 `
 
 export default Hero

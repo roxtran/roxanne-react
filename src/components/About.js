@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const About = () => {
   return (
-    <StyledAbout>
+    <StyledAbout id='about'>
       <h2>About Me</h2>
       <p>
         My name is Roxanne Tran. I am a full stack designer and consultant with

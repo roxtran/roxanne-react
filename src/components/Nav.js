@@ -1,19 +1,74 @@
 import React from 'react'
 import styled from 'styled-components'
-// import { Link as LinkS } from 'react-scroll'
+import { Link as LinkS } from 'react-scroll'
 
 const Nav = () => {
   return (
     <StyledNav>
       <ul>
-        <li>Digital Designer & Developer</li>
-        <li>Completed Projects</li>
-        <li>About Me</li>
-        <li>Consulting & Concepts</li>
+        <li>
+          <Scroll
+            to='hero'
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact='true'
+            offset={-55}
+          >
+            Digital Designer & Developer
+          </Scroll>
+        </li>
+        <li>
+          <Scroll
+            to='projects'
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact='true'
+            offset={-55}
+          >
+            Completed Projects
+          </Scroll>
+        </li>
+        <li>
+          <Scroll
+            to='about'
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact='true'
+            offset={-55}
+          >
+            About Me
+          </Scroll>
+        </li>
+        <li>
+          <Scroll
+            to='consult'
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact='true'
+            offset={90}
+          >
+            Consulting & Concepts
+          </Scroll>
+        </li>
       </ul>
     </StyledNav>
   )
 }
+
+const Scroll = styled(LinkS)`
+  color: #272343;
+  cursor: pointer;
+  &:hover {
+    color: #ffd803;
+  }
+  &:active {
+    color: #ffd803;
+  }
+`
 
 const StyledNav = styled.nav`
   width: 300px;

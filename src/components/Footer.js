@@ -6,14 +6,22 @@ import circle3 from '../img/circle3.png'
 
 const Footer = () => {
   return (
-    <StyledFooter>
+    <StyledFooter id='consult'>
       <Social>
         <h3>Social</h3>
         <ul>
-          <li>Linkedin</li>
-          <li>Facebook</li>
-          <li>Instagram</li>
-          <li>Pinterest</li>
+          <li>
+            <a href='/#'>Linkedin</a>
+          </li>
+          <li>
+            <a href='/#'>Facebook</a>
+          </li>
+          <li>
+            <a href='/#'>Instagram</a>
+          </li>
+          <li>
+            <a href='/#'>Pinterest</a>
+          </li>
         </ul>
       </Social>
 
@@ -21,7 +29,9 @@ const Footer = () => {
         Working with growing startups to increase results. Start a Project
         Today.
       </h2>
-      <a href='/#'>Let's talk about your product</a>
+      <a href='mailto:tran.rox@gmail.com?subject=Info'>
+        Let's talk about your product
+      </a>
       <Cards>
         <Card>
           <img src={consult} alt='consulting' />
@@ -53,10 +63,7 @@ const StyledFooter = styled.div`
   position: relative;
   h2 {
     max-width: 450px;
-    padding-top: 12rem;
-  }
-  a {
-    color: #ffd803;
+    padding-top: 11rem;
   }
 `
 const ImgBG = styled.div`
@@ -70,24 +77,33 @@ const ImgBG = styled.div`
 
 const Cards = styled.div`
   display: flex;
-  margin-top: 10rem;
+  margin-top: 11rem;
   justify-content: flex-start;
 `
 
-const Card = styled.div`
+const Card = styled.a`
   background: white;
   width: 270px;
   height: 100%;
   margin-right: 4rem;
   padding: 2rem;
+  cursor: pointer;
   img {
     margin-bottom: 3rem;
   }
   h4 {
     margin-bottom: 2rem;
+    color: #272343;
   }
   p {
     margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #2d334a;
+    font-weight: normal;
+  }
+
+  &:hover {
+    background: #ffd803;
   }
 `
 
@@ -96,13 +112,18 @@ const Social = styled.div`
   margin-left: -300px;
   position: absolute;
   bottom: 10rem;
-  font-size: 1.1rem;
-  font-weight: bold;
   ul {
     list-style: none;
   }
   li {
     margin: 2rem 0rem;
+  }
+  a {
+    text-decoration: none;
+    color: #272343;
+    &:hover {
+      color: #ffd803;
+    }
   }
 `
 

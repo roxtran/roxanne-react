@@ -1,4 +1,3 @@
-import './App.css'
 import About from './components/About'
 import Footer from './components/Footer'
 import Hero from './components/Hero'
@@ -6,10 +5,12 @@ import Nav from './components/Nav'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 import styled from 'styled-components'
+import GlobalStyle from './components/GlobalStyle'
 
 function App() {
   return (
     <>
+      <GlobalStyle />
       <div className='container'>
         <Nav />
         <Hero />

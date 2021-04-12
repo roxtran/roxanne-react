@@ -9,7 +9,7 @@ import circle2 from '../img/circle2.png'
 
 const Projects = () => {
   return (
-    <StyledProjects>
+    <StyledProjects id='projects'>
       <h2>Some of my favorite projects</h2>
       <ProjectsGrid>
         <a href='/#'>
