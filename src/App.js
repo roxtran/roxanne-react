@@ -15,9 +15,9 @@ function App() {
       <GlobalStyle />
       <motion.div
         className='container'
-        variants={pageAnimation}
-        initial='hidden'
-        animate='show'
+        // variants={pageAnimation}
+        // initial='hidden'
+        // animate='show'
       >
         <Nav />
         <Hero />
