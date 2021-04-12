@@ -31,8 +31,8 @@ const FooterBG = styled.div`
   margin-top: -1070px;
 
   @media (max-width: 1000px) {
-    height: 1405px;
-    margin-top: -1405px;
+    height: 1400px;
+    margin-top: -1400px;
   }
 `
 

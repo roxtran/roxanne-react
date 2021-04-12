@@ -3,10 +3,10 @@ import { createGlobalStyle } from 'styled-components'
 const GlobalStyle = createGlobalStyle`
 
   * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  transition: all 0.4s ease-out;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.4s ease-out;
   }
 
   body {
@@ -32,18 +32,27 @@ const GlobalStyle = createGlobalStyle`
     color: #272343;
 
     @media (max-width: 1000px) {
-      font-size: 3rem;
-      line-height: 3.9rem;
+      font-size: 2.5rem;
+      line-height: 3.25rem;
     }
   }
 
   h2 {
     font-size: 2rem;
     margin-bottom: 5rem;
+
+    @media (max-width: 1000px) {
+      font-size: 1.65rem;
+      line-height: 2.15rem;
+    }
   }
 
   h3 {
     font-size: 1.5rem;
+
+    @media (max-width: 1000px) {
+      font-size: 1.25rem;
+    }
   }
 
   h4 {

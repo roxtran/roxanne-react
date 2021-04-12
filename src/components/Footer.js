@@ -74,8 +74,13 @@ const ImgBG = styled.div`
   position: absolute;
   top: -7%;
   right: -9%;
+
+  @media (max-width: 670px) {
+    top: -10%;
+  }
+
   img {
-    max-width: 400px;
+    max-width: 350px;
   }
 `
 

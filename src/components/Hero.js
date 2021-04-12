@@ -33,10 +33,11 @@ const StyledHero = styled.div`
     max-width: 500px;
     position: absolute;
     top: 27%;
-    right: 0;
+    right: 0%;
   }
 
   @media (max-width: 1000px) {
+    min-height: 100vh;
     margin-top: -60px;
     img {
       max-width: 120%;
