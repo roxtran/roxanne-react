@@ -86,9 +86,13 @@ const ImgBG = styled.div`
 
 const Cards = styled.div`
   display: flex;
-  margin-top: 11rem;
+  margin-top: 10rem;
   justify-content: flex-start;
   flex-wrap: wrap;
+
+  @media (max-width: 540px) {
+    margin-top: 5rem;
+  }
 `
 
 const Card = styled.a`
@@ -103,7 +107,6 @@ const Card = styled.a`
   @media (max-width: 670px) {
     margin-right: 0rem;
     margin-bottom: 4rem;
-    width: 90%;
   }
 
   img {

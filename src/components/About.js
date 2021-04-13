@@ -26,6 +26,7 @@ const StyledAbout = styled.div`
 
   @media (max-width: 670px) {
     grid-template-columns: 1fr;
+    margin-bottom: 220px;
   }
 
   p {
