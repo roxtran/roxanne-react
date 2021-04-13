@@ -58,22 +58,31 @@ const Contact = () => {
 }
 
 const StyledContact = styled.div`
-  background: #bae8e8;
+  background: var(--mint);
   height: 1070px;
   position: relative;
+
   h2 {
     max-width: 440px;
     padding-top: 10rem;
   }
 
-  @media (max-width: 670px) {
+  @media (max-width: 1125px) {
+    text-align: center;
+    h2 {
+      max-width: 75%;
+      margin: 0 auto 5rem;
+    }
+  }
+
+  @media (max-width: 690px) {
     height: 100%;
   }
 `
 const ImgBG = styled.div`
   position: absolute;
   top: -7%;
-  right: -9%;
+  right: 0%;
 
   @media (max-width: 670px) {
     top: -10%;
@@ -86,12 +95,16 @@ const ImgBG = styled.div`
 
 const Cards = styled.div`
   display: flex;
-  margin-top: 10rem;
+  margin: 10rem 0;
   justify-content: flex-start;
   flex-wrap: wrap;
 
-  @media (max-width: 540px) {
-    margin-top: 5rem;
+  @media (max-width: 1125px) {
+    justify-content: center;
+  }
+
+  @media (max-width: 690px) {
+    margin: 5rem 0;
   }
 `
 
@@ -104,9 +117,12 @@ const Card = styled.a`
   cursor: pointer;
   text-decoration: none;
 
-  @media (max-width: 670px) {
-    margin-right: 0rem;
-    margin-bottom: 4rem;
+  @media (max-width: 1125px) {
+    margin: 2rem;
+  }
+
+  @media (max-width: 320px) {
+    margin: 1rem 0;
   }
 
   img {
@@ -115,17 +131,17 @@ const Card = styled.a`
   }
   h4 {
     margin-bottom: 2rem;
-    color: #272343;
+    color: var(--headingColor);
   }
   p {
     margin-bottom: 1rem;
     font-size: 0.9rem;
-    color: #2d334a;
+    color: var(--textColor);
     font-weight: normal;
   }
 
   &:hover {
-    background: #ffd803;
+    background: var(--yellow);
   }
 `
 
@@ -142,9 +158,9 @@ const Social = styled.div`
   }
   a {
     text-decoration: none;
-    color: #272343;
+    color: var(--headingColor);
     &:hover {
-      color: #ffd803;
+      color: var(--yellow);
     }
   }
 `

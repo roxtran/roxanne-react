@@ -21,18 +21,15 @@ const GlobalStyle = createGlobalStyle`
     max-width: 1100px;
     padding-left: 300px;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1128px) {
       padding: 5rem 2rem 0rem 2rem;
     }
-  }
-
-  h1, h2, h3, h4 {
-    color: var(--headingColor);
   }
 
   h1 {
     font-size: 3.75rem;
     line-height: 1.3;
+    color: var(--headingColor);
 
     @media (max-width: 1000px) {
       font-size: 2.5rem;
@@ -43,6 +40,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 2rem;
     line-height: 1.3;
     margin-bottom: 5rem;
+    color: var(--headingColor);
 
     @media (max-width: 1000px) {
       font-size: 1.65rem;
@@ -97,24 +95,14 @@ export const FooterBG = styled.div`
   height: 1070px;
   margin-top: -1070px;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 690px) {
+    height: 1300px;
+    margin-top: -1300px;
+  }
+
+  @media (max-width: 430px) {
     height: 1400px;
     margin-top: -1400px;
-  }
-
-  @media (max-width: 800px) {
-    height: 1100px;
-    margin-top: -1100px;
-  }
-
-  @media (max-width: 540px) {
-    height: 1250px;
-    margin-top: -1250px;
-  }
-
-  @media (max-width: 320px) {
-    height: 1500px;
-    margin-top: -1500px;
   }
 `
 

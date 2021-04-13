@@ -49,10 +49,6 @@ const StyledHero = styled.div`
   width: 100%;
   min-height: 88vh;
   margin-top: -215px;
-  /* padding-top: 58px; */
-  /* h1 {
-    max-width: 480px;
-  } */
   img {
     z-index: -1;
     max-width: 500px;
@@ -62,7 +58,7 @@ const StyledHero = styled.div`
   }
 
   @media (max-width: 1024px) {
-    min-height: 100vh;
+    min-height: 93vh;
     margin-top: -60px;
     img {
       max-width: 120%;
@@ -73,7 +69,11 @@ const HeroHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 15rem;
+  margin-bottom: 22.5vh;
+
+  @media (max-width: 1024px) {
+    margin-bottom: 30vh;
+  }
 `
 
 export default Hero
