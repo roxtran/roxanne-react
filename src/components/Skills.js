@@ -38,7 +38,7 @@ const Skills = () => {
 }
 
 const StyledSkills = styled.div`
-  margin-bottom: 9.35rem;
+  margin-bottom: 150px;
 `
 
 const SkillsGrid = styled.div`
