@@ -48,7 +48,7 @@ const StyledHero = styled.div`
   position: relative;
   width: 100%;
   min-height: 88vh;
-  margin-top: -220px;
+  margin-top: -215px;
   /* padding-top: 58px; */
   /* h1 {
     max-width: 480px;

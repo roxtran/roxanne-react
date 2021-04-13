@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     background: #fffffe;
     color: #2d334a;
-    font-family: 'Circular Book', sans-serif;
+    font-family: 'Inter', sans-serif;
     overflow-x: hidden;
   }
 
