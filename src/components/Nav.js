@@ -60,13 +60,12 @@ const Nav = () => {
 }
 
 const Scroll = styled(LinkS)`
-  color: #272343;
+  color: var(--headingColor);
   cursor: pointer;
-  &:hover {
-    color: #ffd803;
-  }
+
+  &:hover,
   &.active {
-    color: #ffd803;
+    color: var(--yellow);
   }
 `
 

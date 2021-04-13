@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
 
@@ -10,8 +10,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: #fffffe;
-    color: #2d334a;
+    background: var(--white);
+    color: var(--textColor);
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
   }
@@ -26,24 +26,26 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  h1, h2, h3, h4 {
+    color: var(--headingColor);
+  }
+
   h1 {
     font-size: 3.75rem;
-    line-height: 4.85rem;
-    color: #272343;
+    line-height: 1.3;
 
     @media (max-width: 1000px) {
       font-size: 2.5rem;
-      line-height: 3.25rem;
     }
   }
 
   h2 {
     font-size: 2rem;
+    line-height: 1.3;
     margin-bottom: 5rem;
 
     @media (max-width: 1000px) {
       font-size: 1.65rem;
-      line-height: 2.15rem;
     }
   }
 
@@ -64,12 +66,12 @@ const GlobalStyle = createGlobalStyle`
   }
 
   a {
-    color: #ffd803;
+    color: var(--yellow);
     font-size: 1rem;
     font-weight: bold;
 
     &:hover {
-      color: #272343;
+      color: var(--headingColor);
     }
 
     @media (max-width: 320px) {
@@ -78,15 +80,41 @@ const GlobalStyle = createGlobalStyle`
   }
 
   span {
-    color: #ffd803;
+    color: var(--yellow);
   }
 
   p {
-    line-height: 1.45rem;
+    line-height: 1.45;
   }
 
   .hide {
     overflow: hidden;
+  }
+`
+export const FooterBG = styled.div`
+  width: 100%;
+  background: var(--mint);
+  height: 1070px;
+  margin-top: -1070px;
+
+  @media (max-width: 1000px) {
+    height: 1400px;
+    margin-top: -1400px;
+  }
+
+  @media (max-width: 800px) {
+    height: 1100px;
+    margin-top: -1100px;
+  }
+
+  @media (max-width: 540px) {
+    height: 1250px;
+    margin-top: -1250px;
+  }
+
+  @media (max-width: 320px) {
+    height: 1500px;
+    margin-top: -1500px;
   }
 `
 
