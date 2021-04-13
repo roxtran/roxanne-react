@@ -62,7 +62,7 @@ const StyledContact = styled.div`
   height: 1070px;
   position: relative;
   h2 {
-    max-width: 420px;
+    max-width: 440px;
     padding-top: 10rem;
   }
 
