@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
     padding-left: 300px;
 
     @media (max-width: 1128px) {
-      padding: 5rem 2rem 0rem 2rem;
+      padding: 0rem 5%;
     }
   }
 
@@ -100,9 +100,9 @@ export const FooterBG = styled.div`
     margin-top: -1300px;
   }
 
-  @media (max-width: 430px) {
-    height: 1400px;
-    margin-top: -1400px;
+  @media (max-width: 400px) {
+    height: 1350px;
+    margin-top: -1350px;
   }
 `
 

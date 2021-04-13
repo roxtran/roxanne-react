@@ -59,7 +59,7 @@ const StyledHero = styled.div`
 
   @media (max-width: 1024px) {
     min-height: 93vh;
-    margin-top: -60px;
+    margin-top: 5%;
     img {
       max-width: 120%;
     }
