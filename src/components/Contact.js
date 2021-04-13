@@ -62,8 +62,8 @@ const StyledContact = styled.div`
   height: 1070px;
   position: relative;
   h2 {
-    max-width: 500px;
-    padding-top: 11rem;
+    max-width: 420px;
+    padding-top: 10rem;
   }
 
   @media (max-width: 670px) {
@@ -93,7 +93,7 @@ const Cards = styled.div`
 
 const Card = styled.a`
   background: white;
-  width: 270px;
+  width: 250px;
   height: 100%;
   margin-right: 4.5rem;
   padding: 2rem;
