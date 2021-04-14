@@ -69,7 +69,7 @@ const StyledContact = styled.div`
     position: absolute;
     top: -7%;
     right: 0;
-    max-width: 320px;
+    max-width: 270px;
 
     @media (max-width: 670px) {
       top: -10%;
