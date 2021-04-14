@@ -50,9 +50,7 @@ const Contact = () => {
           </p>
         </Card>
       </Cards>
-      <ImgBG>
-        <img src={circle3} alt='circle3' />
-      </ImgBG>
+      <img src={circle3} alt='circle3' className='circle' />
     </StyledContact>
   )
 }
@@ -67,6 +65,17 @@ const StyledContact = styled.div`
     padding-top: 10rem;
   }
 
+  img.circle {
+    position: absolute;
+    top: -7%;
+    right: 0;
+    max-width: 350px;
+
+    @media (max-width: 670px) {
+      top: -10%;
+    }
+  }
+
   @media (max-width: 1125px) {
     text-align: center;
     h2 {
@@ -77,19 +86,6 @@ const StyledContact = styled.div`
 
   @media (max-width: 690px) {
     height: 100%;
-  }
-`
-const ImgBG = styled.div`
-  position: absolute;
-  top: -7%;
-  right: 0%;
-
-  @media (max-width: 670px) {
-    top: -10%;
-  }
-
-  img {
-    max-width: 350px;
   }
 `
 
