@@ -29,7 +29,11 @@ const Contact = () => {
         Working with growing startups to increase results. Start a Project
         Today.
       </h2>
-      <a href='mailto:tran.rox@gmail.com?subject=Info'>
+      <a
+        href='mailto:tran.rox@gmail.com?subject=Info'
+        target='_blank'
+        rel='noreferrer'
+      >
         Let's talk about your product
       </a>
       <Cards>

@@ -14,6 +14,7 @@ const Hero = () => {
         <motion.a
           variants={slideUp}
           href='mailto:tran.rox@gmail.com?subject=Info'
+          target='_blank'
         >
           Let's Start a Project
         </motion.a>
