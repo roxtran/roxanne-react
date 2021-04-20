@@ -1,15 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
-import { slideUp } from '../animation'
+import { fade, slideUp } from '../animation'
+import { useScroll } from './useScroll'
 
 const Skills = () => {
+  const [element, controls] = useScroll()
   return (
     <StyledSkills id='skills'>
       <motion.h2 variants={slideUp}>
         Multidisciplinary digital designer & developer
       </motion.h2>
-      <SkillsGrid>
+      <SkillsGrid
+        variants={fade}
+        initial='hidden'
+        animate={controls}
+        ref={element}
+      >
         <h3>User Interface</h3>
         <p>
           Creating beautiful interface for products that not only look good but
@@ -41,7 +48,7 @@ const StyledSkills = styled.div`
   margin-bottom: 150px;
 `
 
-const SkillsGrid = styled.div`
+const SkillsGrid = styled(motion.div)`
   display: grid;
   grid-template-columns: 0.6fr 1fr;
   grid-row-gap: 4.35rem;

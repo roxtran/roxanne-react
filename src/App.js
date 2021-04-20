@@ -12,14 +12,18 @@ import { Suspense, lazy } from 'react'
 import { motion } from 'framer-motion'
 import { pageAnimation } from './animation'
 
-
 const Projects = lazy(() => import('./components/Projects'))
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <motion.div className='container' variants={pageAnimation} initial='hidden' animate='show'>
+      <motion.div
+        className='container'
+        variants={pageAnimation}
+        initial='hidden'
+        animate='show'
+      >
         <Nav />
         <Hero />
         <Skills />

@@ -5,13 +5,13 @@ export const pageAnimation = {
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.25
+      staggerChildren: 0.1
     }
   },
   exit: {
     opacity: 0,
     transition: {
-      duration: 0.5
+      duration: 0.1
     }
   }
 }
@@ -21,7 +21,7 @@ export const slideUp = {
   show: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.2 }
+    transition: { duration: 0.1 }
   }
 }
 
@@ -34,11 +34,7 @@ export const circle1Amin = {
   }
 }
 
-export const scale = {
-  hidden: { opacity: 0, scale: 0.5 },
-  show: {
-    opacity: 1,
-    scale: 1,
-    transition: { duration: 0.5 }
-  }
+export const fade = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1, trasition: { duration: 0.1 } }
 }

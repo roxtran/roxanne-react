@@ -7,9 +7,20 @@ import WooCommerce from '../img/woocommerce.jpg'
 import LandingPlage from '../img/landing-page.jpg'
 import RestaurantApp from '../img/restaurant-app.jpg'
 
+import { motion } from 'framer-motion'
+import { fade } from '../animation'
+import { useScroll } from './useScroll'
+
 const Projects = () => {
+  const [element, controls] = useScroll()
   return (
-    <StyledProjects id='projects'>
+    <StyledProjects
+      id='projects'
+      variants={fade}
+      initial='hidden'
+      animate={controls}
+      ref={element}
+    >
       <h2>Some of my favorite projects</h2>
       <ProjectsGrid>
         <div className='card'>
@@ -72,7 +83,7 @@ const Projects = () => {
   )
 }
 
-const StyledProjects = styled.div`
+const StyledProjects = styled(motion.div)`
   margin-bottom: 150px;
   position: relative;
 `

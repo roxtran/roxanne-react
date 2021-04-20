@@ -1,9 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { motion } from 'framer-motion'
+import { fade } from '../animation'
+import { useScroll } from './useScroll'
+
 const About = () => {
+  const [element, controls] = useScroll()
   return (
-    <StyledAbout id='about'>
+    <StyledAbout
+      id='about'
+      variants={fade}
+      initial='hidden'
+      animate={controls}
+      ref={element}
+    >
       <h2>About Me</h2>
       <p>
         My name is Roxanne Tran. I am a full stack designer and developer,
@@ -17,7 +28,7 @@ const About = () => {
   )
 }
 
-const StyledAbout = styled.div`
+const StyledAbout = styled(motion.div)`
   position: relative;
   display: grid;
   grid-template-columns: 0.6fr 1fr;

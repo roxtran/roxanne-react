@@ -4,9 +4,20 @@ import consult from '../img/consult.gif'
 import design from '../img/design.gif'
 import circle3 from '../img/circle3a.png'
 
+import { motion } from 'framer-motion'
+import { fade } from '../animation'
+import { useScroll } from './useScroll'
+
 const Contact = () => {
+  const [element, controls] = useScroll()
   return (
-    <StyledContact id='contact'>
+    <StyledContact
+      id='contact'
+      variants={fade}
+      initial='hidden'
+      animate={controls}
+      ref={element}
+    >
       <Social>
         <h3>Social</h3>
         <ul>
@@ -59,7 +70,7 @@ const Contact = () => {
   )
 }
 
-const StyledContact = styled.div`
+const StyledContact = styled(motion.div)`
   background: var(--mint);
   height: 1070px;
   position: relative;
