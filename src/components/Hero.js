@@ -59,13 +59,21 @@ const StyledHero = styled.div`
   }
 
   @media (max-width: 1024px) {
-    min-height: 93vh;
+    min-height: 90vh;
     margin-top: 5%;
     img {
       max-width: 120%;
     }
   }
+
+  @media (max-width: 650px) {
+    min-height: 86vh;
+    img {
+      max-width: 100%;
+    }
+  }
 `
+
 const HeroHeader = styled.div`
   display: flex;
   justify-content: space-between;
