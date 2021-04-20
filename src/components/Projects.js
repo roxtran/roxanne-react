@@ -13,32 +13,32 @@ const Projects = () => {
       <h2>Some of my favorite projects</h2>
       <ProjectsGrid>
         <a href='https://rtodoapp.netlify.app' target='_blank' rel='noreferrer'>
-          <img src={TodoApp} alt='Todo App' />
           <h3>Todo App</h3>
+          <img src={TodoApp} alt='Todo App' />
         </a>
         <a
           href='https://rox-react-player.netlify.app'
           target='_blank'
           rel='noreferrer'
         >
-          <img src={MusicPlayer} alt='Music Player App' />
           <h3>Music Player App</h3>
+          <img src={MusicPlayer} alt='Music Player App' />
         </a>
         <a href='http://rhemaworld.com' target='_blank' rel='noreferrer'>
-          <img src={WooCommerce} alt='WooCommerce' />
           <h3>WooCommerce</h3>
+          <img src={WooCommerce} alt='WooCommerce' />
         </a>
         <a href='https://rhemacanada.ca' target='_blank' rel='noreferrer'>
-          <img src={LandingPlage} alt='Landing Page' />
           <h3>Landing Page</h3>
+          <img src={LandingPlage} alt='Landing Page' />
         </a>
         <a
           href='https://macopolo.herokuapp.com'
           target='_blank'
           rel='noreferrer'
         >
-          <img src={RestaurantApp} alt='Restaurant App' />
           <h3>Restaurant App</h3>
+          <img src={RestaurantApp} alt='Restaurant App' />
         </a>
       </ProjectsGrid>
       <ImgBG>
