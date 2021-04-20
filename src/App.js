@@ -6,17 +6,20 @@ import Nav from './components/Nav'
 import Skills from './components/Skills'
 import './_variables.css'
 import GlobalStyle, { FooterBG } from './components/GlobalStyle'
-
+// Lazy loading
 import { Suspense, lazy } from 'react'
+// Animation
+import { motion } from 'framer-motion'
+import { pageAnimation } from './animation'
+
+
 const Projects = lazy(() => import('./components/Projects'))
-// import { motion } from 'framer-motion'
-// import { pageAnimation } from './components/animation'
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <div className='container'>
+      <motion.div className='container' variants={pageAnimation} initial='hidden' animate='show'>
         <Nav />
         <Hero />
         <Skills />
@@ -26,7 +29,7 @@ function App() {
         </Suspense>
         <About />
         <Contact />
-      </div>
+      </motion.div>
       <FooterBG />
     </>
   )

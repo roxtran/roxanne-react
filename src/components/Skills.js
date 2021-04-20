@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
-import { slideUp } from './animation'
+import { slideUp } from '../animation'
 
 const Skills = () => {
   return (
