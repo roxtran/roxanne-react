@@ -118,7 +118,7 @@ const ProjectsGrid = styled.div`
       justify-content: center;
       align-items: center;
       width: 100%;
-      height: 450px;
+      height: 465px;
       background: linear-gradient(
         rgba(29, 38, 113, 0.9),
         rgba(195, 55, 100, 0.9)
@@ -134,7 +134,7 @@ const ProjectsGrid = styled.div`
     }
     img {
       width: 100%;
-      height: 450px;
+      height: 465px;
       object-fit: cover;
     }
   }
