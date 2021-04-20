@@ -1,36 +1,44 @@
 import React from 'react'
 import styled from 'styled-components'
-import WebDesign from '../img/web-design.png'
-import MobileApp from '../img/mobile-app-design.png'
-import Wireframe from '../img/wireframe-case-study.png'
-import UX from '../img/ux-case-study.png'
-import Photography from '../img/photography.png'
 import circle2 from '../img/circle2.png'
+import TodoApp from '../img/exported/todo-app.png'
+import MusicPlayer from '../img/exported/music-player.png'
+import WooCommerce from '../img/exported/woo-commerce.png'
+import LandingPlage from '../img/exported/landing-page.png'
+import RestaurantApp from '../img/exported/restaurant-app.png'
 
 const Projects = () => {
   return (
     <StyledProjects id='projects'>
       <h2>Some of my favorite projects</h2>
       <ProjectsGrid>
-        <a href='/#'>
-          <img src={WebDesign} alt='Web Design' />
-          <h3>Web Design</h3>
+        <a href='https://rtodoapp.netlify.app' target='_blank' rel='noreferrer'>
+          <img src={TodoApp} alt='Todo App' />
+          <h3>Todo App</h3>
         </a>
-        <a href='/#'>
-          <img src={MobileApp} alt='Mobile App Design' />
-          <h3>Mobile App Design</h3>
+        <a
+          href='https://rox-react-player.netlify.app'
+          target='_blank'
+          rel='noreferrer'
+        >
+          <img src={MusicPlayer} alt='Music Player App' />
+          <h3>Music Player App</h3>
         </a>
-        <a href='/#'>
-          <img src={Wireframe} alt='Wireframe Case Study' />
-          <h3>Wireframe Case Study</h3>
+        <a href='http://rhemaworld.com' target='_blank' rel='noreferrer'>
+          <img src={WooCommerce} alt='WooCommerce' />
+          <h3>WooCommerce</h3>
         </a>
-        <a href='/#'>
-          <img src={UX} alt='' />
-          <h3>UX Case Study</h3>
+        <a href='https://rhemacanada.ca' target='_blank' rel='noreferrer'>
+          <img src={LandingPlage} alt='Landing Page' />
+          <h3>Landing Page</h3>
         </a>
-        <a href='/#'>
-          <img src={Photography} alt='' />
-          <h3>Photography</h3>
+        <a
+          href='https://macopolo.herokuapp.com'
+          target='_blank'
+          rel='noreferrer'
+        >
+          <img src={RestaurantApp} alt='Restaurant App' />
+          <h3>Restaurant App</h3>
         </a>
       </ProjectsGrid>
       <ImgBG>
@@ -73,6 +81,7 @@ const ProjectsGrid = styled.div`
     align-items: center;
     max-width: 100%;
     &:hover {
+      color: var(--yellow);
     }
     img {
       max-width: 100%;
