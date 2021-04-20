@@ -110,7 +110,6 @@ const ProjectsGrid = styled.div`
 
   .card {
     position: relative;
-    overflow: hidden;
   }
 
   .card:nth-child(even) {
@@ -136,7 +135,7 @@ const ProjectsGrid = styled.div`
       );
 
       &:hover {
-        box-shadow: rgba(99, 99, 99, 0.9) 0px 2px 12px 0px;
+        box-shadow: rgba(99, 99, 99, 0.9) 0 2px 12px 0px;
         opacity: 0.5;
         h3 {
           opacity: 0;
