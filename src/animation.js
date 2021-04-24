@@ -21,7 +21,7 @@ export const slideUp = {
   show: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.1 }
+    transition: { duration: 0.2 }
   }
 }
 
@@ -36,5 +36,5 @@ export const circle1Amin = {
 
 export const fade = {
   hidden: { opacity: 0 },
-  show: { opacity: 1, trasition: { duration: 0.1 } }
+  show: { opacity: 1, trasition: { duration: 0.2 } }
 }

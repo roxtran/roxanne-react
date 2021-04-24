@@ -59,7 +59,10 @@ const SkillsGrid = styled(motion.div)`
     grid-row-gap: 1.25rem;
 
     p {
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
+    }
+    p:last-child {
+      margin-bottom: 0;
     }
   }
 `
