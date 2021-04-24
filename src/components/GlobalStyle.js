@@ -39,7 +39,7 @@ const GlobalStyle = createGlobalStyle`
   h2 {
     font-size: 2rem;
     line-height: 1.3;
-    margin-bottom: 4rem;
+    margin-bottom: 4.5rem;
     color: var(--headingColor);
 
     @media (max-width: 1000px) {
