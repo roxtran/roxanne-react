@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import circle2 from '../img/circle2.png'
+import circle2 from '../img/circle2.webp'
 import TodoApp from '../img/todo-app.jpg'
 import MusicPlayer from '../img/music-player.jpg'
 import WooCommerce from '../img/woocommerce.jpg'

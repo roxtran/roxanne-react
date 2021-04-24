@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import consult from '../img/consult.gif'
 import design from '../img/design.gif'
-import circle3 from '../img/circle3a.png'
+import circle3 from '../img/circle3.webp'
 
 import { motion } from 'framer-motion'
 import { fade } from '../animation'
