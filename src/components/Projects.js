@@ -8,7 +8,7 @@ import LandingPlage from '../img/landing-page.jpg'
 import RestaurantApp from '../img/restaurant-app.jpg'
 
 import { motion } from 'framer-motion'
-import { fade } from '../animation'
+import { slideUp } from '../animation'
 import { useScroll } from './useScroll'
 
 const Projects = () => {
@@ -16,7 +16,7 @@ const Projects = () => {
   return (
     <StyledProjects
       id='projects'
-      variants={fade}
+      variants={slideUp}
       initial='hidden'
       animate={controls}
       ref={element}
