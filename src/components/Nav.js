@@ -49,7 +49,7 @@ const Nav = () => {
             duration={500}
             spy={true}
             exact='true'
-            offset={90}
+            offset={-80}
           >
             Contact
           </Scroll>
