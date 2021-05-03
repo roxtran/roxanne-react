@@ -21,7 +21,7 @@ const Projects = () => {
       animate={controls}
       ref={element}
     >
-      <h2>Some of my favorite projects</h2>
+      <h2>Some of my projects</h2>
       <ProjectsGrid>
         <div className='card'>
           <a

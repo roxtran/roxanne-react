@@ -15,7 +15,7 @@ const Nav = () => {
             exact='true'
             offset={-55}
           >
-            Digital Designer & Developer
+            What I Do
           </Scroll>
         </li>
         <li>
@@ -27,7 +27,7 @@ const Nav = () => {
             exact='true'
             offset={-55}
           >
-            Completed Projects
+            Projects
           </Scroll>
         </li>
         <li>
@@ -51,7 +51,7 @@ const Nav = () => {
             exact='true'
             offset={90}
           >
-            Consulting & Concepts
+            Contact
           </Scroll>
         </li>
       </ul>
