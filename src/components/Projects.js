@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import circle2 from '../img/circle2.webp'
-import TodoApp from '../img/todo-app.webp'
+import ReactFramer from '../img/react-framer.jpg'
 import MusicPlayer from '../img/music-player.webp'
 import WooCommerce from '../img/woocommerce.webp'
 import LandingPlage from '../img/landing-page.webp'
@@ -25,14 +25,14 @@ const Projects = () => {
       <ProjectsGrid>
         <div className='card'>
           <a
-            href='https://rtodoapp.netlify.app'
+            href='https://capture-framer.netlify.app'
             target='_blank'
             rel='noreferrer'
           >
             <div className='img-cover'>
-              <h3>Todo App</h3>
+              <h3>React with Animation</h3>
             </div>
-            <img src={TodoApp} alt='Todo App' />
+            <img src={ReactFramer} alt='React Framer' />
           </a>
         </div>
         <div className='card'>
