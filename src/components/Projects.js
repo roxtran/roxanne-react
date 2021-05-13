@@ -30,7 +30,7 @@ const Projects = () => {
             rel='noreferrer'
           >
             <div className='img-cover'>
-              <h3>React with Animation</h3>
+              <h3>React with Framer</h3>
             </div>
             <img src={ReactFramer} alt='React Framer' />
           </a>
