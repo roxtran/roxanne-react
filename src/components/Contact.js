@@ -22,16 +22,40 @@ const Contact = () => {
         <h3>Social</h3>
         <ul>
           <li>
-            <a href='/#'>Linkedin</a>
+            <a
+              href='https://www.linkedin.com/in/roxtran/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Linkedin
+            </a>
           </li>
           <li>
-            <a href='/#'>Facebook</a>
+            <a
+              href='https://www.facebook.com/rox127/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Facebook
+            </a>
           </li>
           <li>
-            <a href='/#'>Instagram</a>
+            <a
+              href='https://www.instagram.com/rox127/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Instagram
+            </a>
           </li>
           <li>
-            <a href='/#'>Pinterest</a>
+            <a
+              href='https://www.pinterest.ca/rox127/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Pinterest
+            </a>
           </li>
         </ul>
       </Social>
