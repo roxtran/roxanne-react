@@ -32,6 +32,15 @@ const Contact = () => {
           </li>
           <li>
             <a
+              href='https://www.pinterest.ca/rox127/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Pinterest
+            </a>
+          </li>
+          <li>
+            <a
               href='https://www.facebook.com/rox127/'
               target='_blank'
               rel='noreferrer'
@@ -46,15 +55,6 @@ const Contact = () => {
               rel='noreferrer'
             >
               Instagram
-            </a>
-          </li>
-          <li>
-            <a
-              href='https://www.pinterest.ca/rox127/'
-              target='_blank'
-              rel='noreferrer'
-            >
-              Pinterest
             </a>
           </li>
         </ul>
