@@ -29,7 +29,7 @@ const Projects = () => {
             target='_blank'
             rel='noreferrer'
           >
-            <div className='img-cover'>
+            <div className='img-overlay'>
               <h3>React with Framer</h3>
             </div>
             <img src={ReactFramer} alt='React Framer' />
@@ -41,7 +41,7 @@ const Projects = () => {
             target='_blank'
             rel='noreferrer'
           >
-            <div className='img-cover'>
+            <div className='img-overlay'>
               <h3>Music Player App</h3>
             </div>
             <img src={MusicPlayer} alt='Music Player App' />
@@ -49,7 +49,7 @@ const Projects = () => {
         </div>
         <div className='card'>
           <a href='http://rhemaworld.com' target='_blank' rel='noreferrer'>
-            <div className='img-cover'>
+            <div className='img-overlay'>
               <h3>WooCommerce</h3>
             </div>
             <img src={WooCommerce} alt='WooCommerce' />
@@ -57,7 +57,7 @@ const Projects = () => {
         </div>
         <div className='card'>
           <a href='https://rhemacanada.ca' target='_blank' rel='noreferrer'>
-            <div className='img-cover'>
+            <div className='img-overlay'>
               <h3>Landing Page</h3>
             </div>
             <img src={LandingPlage} alt='Landing Page' />
@@ -69,10 +69,19 @@ const Projects = () => {
             target='_blank'
             rel='noreferrer'
           >
-            <div className='img-cover'>
+            <div className='img-overlay'>
               <h3>Restaurant App</h3>
             </div>
             <img src={RestaurantApp} alt='Restaurant App' />
+          </a>
+        </div>
+        <div className='card'>
+          <a
+            href='https://dribbble.com/roxannetran'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <p>View my design work on dribbble</p>
           </a>
         </div>
       </ProjectsGrid>
@@ -119,10 +128,24 @@ const ProjectsGrid = styled.div`
     }
   }
 
+  .card:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      color: var(--yellow);
+      /* text-decoration: none; */
+      &:hover {
+        color: var(--headingColor);
+      }
+    }
+  }
+
   a {
     color: white;
 
-    .img-cover {
+    .img-overlay {
       position: absolute;
       display: flex;
       justify-content: center;
@@ -142,6 +165,7 @@ const ProjectsGrid = styled.div`
         }
       }
     }
+
     img {
       width: 100%;
       height: 465px;
