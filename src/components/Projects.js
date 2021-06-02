@@ -81,7 +81,7 @@ const Projects = () => {
             target='_blank'
             rel='noreferrer'
           >
-            <p>View my design work on dribbble</p>
+            <p>View my artwork on dribbble</p>
           </a>
         </div>
       </ProjectsGrid>
