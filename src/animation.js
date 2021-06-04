@@ -5,7 +5,7 @@ export const pageAnimation = {
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.1
+      staggerChildren: 0.2
     }
   },
   exit: {
@@ -21,7 +21,7 @@ export const slideUp = {
   show: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.2 }
+    transition: { duration: 0.4}
   }
 }
 
