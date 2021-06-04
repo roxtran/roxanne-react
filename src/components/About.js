@@ -17,7 +17,7 @@ const About = () => {
     >
       <h2>About Me</h2>
       <p>
-        My name is Roxanne Tran. I am a full stack designer and developer,
+        Hi, my name is Roxanne Tran. I am a full stack designer and developer,
         currently, working remotely for clients around the world.
         <br />
         <br />I focus on working with growing startups to increase their results
