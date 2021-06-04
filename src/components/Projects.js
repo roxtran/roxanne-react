@@ -8,8 +8,8 @@ import LandingPlage from '../img/landing-page.webp'
 import RestaurantApp from '../img/restaurant-app.webp'
 
 import { motion } from 'framer-motion'
-import { slideRight, zoomOut } from '../animation'
-import { useScroll } from './useScroll'
+import { slideRight, zoomOut } from '../styles/animation'
+import { useScroll } from '../utils/useScroll'
 
 const Projects = () => {
   const [element, controls] = useScroll()

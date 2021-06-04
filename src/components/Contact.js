@@ -5,8 +5,8 @@ import design from '../img/design.gif'
 import circle3 from '../img/circle3.webp'
 
 import { motion } from 'framer-motion'
-import { fade } from '../animation'
-import { useScroll } from './useScroll'
+import { fade } from '../styles/animation'
+import { useScroll } from '../utils/useScroll'
 
 const Contact = () => {
   const [element, controls] = useScroll()

@@ -1,9 +1,9 @@
+import { motion } from 'framer-motion'
 import React from 'react'
 import styled from 'styled-components'
+import { useScroll } from '../utils/useScroll'
 
-import { motion } from 'framer-motion'
-import { fade, slideRight, slideUp } from '../animation'
-import { useScroll } from './useScroll'
+import { slideRight, slideUp } from '../styles/animation'
 
 const About = () => {
   const [element, controls] = useScroll()

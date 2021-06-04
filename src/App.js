@@ -4,13 +4,13 @@ import Hero from './components/Hero'
 import Nav from './components/Nav'
 // import Projects from './components/Projects'
 import Skills from './components/Skills'
-import './_variables.css'
-import GlobalStyle, { FooterBG } from './components/GlobalStyle'
+import './styles/_variables.css'
+import GlobalStyle, { FooterBG } from './styles/GlobalStyle'
 // Lazy loading
 import { Suspense, lazy } from 'react'
 // Animation
 import { motion } from 'framer-motion'
-import { pageAnimation } from './animation'
+import { pageAnimation } from './styles/animation'
 
 const Projects = lazy(() => import('./components/Projects'))
 

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link as LinkS } from 'react-scroll'
 import { motion } from 'framer-motion'
-import { slideRight } from '../animation'
+import { slideRight } from '../styles/animation'
 
 const Nav = () => {
   return (

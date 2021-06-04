@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
-import { fade, slideUp } from '../animation'
-import { useScroll } from './useScroll'
+import { fade, slideUp } from '../styles/animation'
+import { useScroll } from '../utils/useScroll'
 
 const Skills = () => {
   const [element, controls] = useScroll()
@@ -56,7 +56,7 @@ const SkillsGrid = styled(motion.div)`
 
   @media (max-width: 670px) {
     grid-template-columns: 1fr;
-    grid-row-gap: 1.25rem;
+    grid-row-gap: 1rem;
 
     p {
       margin-bottom: 2rem;
