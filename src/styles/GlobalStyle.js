@@ -45,6 +45,10 @@ const GlobalStyle = createGlobalStyle`
     @media (max-width: 1000px) {
       font-size: 1.65rem;
     }
+
+    @media (max-width: 640px) {
+      margin-bottom: 2.5rem;
+    }
   }
 
   h3 {
