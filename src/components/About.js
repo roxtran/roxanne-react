@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { motion } from 'framer-motion'
-import { fade } from '../animation'
+import { fade, slideRight, slideUp } from '../animation'
 import { useScroll } from './useScroll'
 
 const About = () => {
@@ -10,20 +10,20 @@ const About = () => {
   return (
     <StyledAbout
       id='about'
-      variants={fade}
+      variants={slideRight}
       initial='hidden'
       animate={controls}
       ref={element}
     >
       <h2>About Me</h2>
-      <p>
+      <motion.p variants={slideUp}>
         Hi, my name is Roxanne Tran. I am a full stack designer and developer,
         currently, working remotely for clients around the world.
         <br />
         <br />I focus on working with growing startups to increase their results
         by either working with their brand/product directly or via consulting
         with their existing team.
-      </p>
+      </motion.p>
     </StyledAbout>
   )
 }

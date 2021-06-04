@@ -8,7 +8,7 @@ import LandingPlage from '../img/landing-page.webp'
 import RestaurantApp from '../img/restaurant-app.webp'
 
 import { motion } from 'framer-motion'
-import { zoomOut } from '../animation'
+import { slideRight, zoomOut } from '../animation'
 import { useScroll } from './useScroll'
 
 const Projects = () => {
@@ -16,13 +16,13 @@ const Projects = () => {
   return (
     <StyledProjects
       id='projects'
-      variants={zoomOut}
+      variants={slideRight}
       initial='hidden'
       animate={controls}
       ref={element}
     >
       <h2>Some of my projects</h2>
-      <ProjectsGrid>
+      <ProjectsGrid variants={zoomOut}>
         <div className='card'>
           <a
             href='https://capture-framer.netlify.app'
@@ -107,7 +107,7 @@ const ImgBG = styled.div`
   }
 `
 
-const ProjectsGrid = styled.div`
+const ProjectsGrid = styled(motion.div)`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 3.75rem;
