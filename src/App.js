@@ -24,15 +24,19 @@ function App() {
         initial='hidden'
         animate='show'
       >
-        <Nav />
-        <Hero />
-        <Skills />
-        {/* <Projects /> */}
-        <Suspense fallback={<div>Loading...</div>}>
-          <Projects />
-        </Suspense>
-        <About />
-        <Contact />
+        <header>
+          <Nav />
+        </header>
+        <main>
+          <Hero />
+          <Skills />
+          {/* <Projects /> */}
+          <Suspense fallback={<div>Loading...</div>}>
+            <Projects />
+          </Suspense>
+          <About />
+          <Contact />
+        </main>
       </motion.div>
       <FooterBG />
     </>

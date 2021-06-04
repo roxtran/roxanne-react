@@ -28,7 +28,7 @@ const About = () => {
   )
 }
 
-const StyledAbout = styled(motion.div)`
+const StyledAbout = styled(motion.section)`
   position: relative;
   display: grid;
   grid-template-columns: 0.6fr 1fr;

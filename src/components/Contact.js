@@ -94,7 +94,7 @@ const Contact = () => {
   )
 }
 
-const StyledContact = styled(motion.div)`
+const StyledContact = styled(motion.section)`
   background: var(--mint);
   height: 1070px;
   position: relative;

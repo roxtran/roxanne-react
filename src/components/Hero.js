@@ -39,7 +39,7 @@ const Hero = () => {
   )
 }
 
-const StyledHero = styled.div`
+const StyledHero = styled.section`
   position: relative;
   width: 100%;
   min-height: 88vh;

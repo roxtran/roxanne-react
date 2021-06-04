@@ -92,7 +92,7 @@ const Projects = () => {
   )
 }
 
-const StyledProjects = styled(motion.div)`
+const StyledProjects = styled(motion.section)`
   margin-bottom: 150px;
   position: relative;
 `

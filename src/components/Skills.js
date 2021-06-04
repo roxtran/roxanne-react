@@ -44,7 +44,7 @@ const Skills = () => {
   )
 }
 
-const StyledSkills = styled.div`
+const StyledSkills = styled.section`
   margin-bottom: 150px;
 `
 
