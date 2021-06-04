@@ -112,7 +112,7 @@ const ProjectsGrid = styled(motion.div)`
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 3.75rem;
 
-  @media (max-width: 670px) {
+  @media screen and (max-width: 670px) {
     grid-template-columns: 1fr;
     grid-row-gap: 3.75rem;
   }
@@ -123,7 +123,7 @@ const ProjectsGrid = styled(motion.div)`
 
   .card:nth-child(even) {
     margin-top: 3.75rem;
-    @media (max-width: 670px) {
+    @media screen and (max-width: 670px) {
       margin-top: 0;
     }
   }

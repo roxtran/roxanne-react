@@ -89,14 +89,14 @@ const StyledNav = styled.nav`
     margin: 2rem 0rem;
   }
 
-  @media (max-width: 1500px) {
+  @media screen and (max-width: 1500px) {
     top: 40px;
     ul {
       margin-top: 40px;
     }
   }
 
-  @media (max-width: 1024px) {
+  @media screen and (max-width: 1024px) {
     display: none;
   }
 `

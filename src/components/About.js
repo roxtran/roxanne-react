@@ -34,7 +34,7 @@ const StyledAbout = styled(motion.div)`
   grid-template-columns: 0.6fr 1fr;
   margin-bottom: 150px;
 
-  @media (max-width: 670px) {
+  @media screen and (max-width: 670px) {
     grid-template-columns: 1fr;
     margin-bottom: 220px;
   }

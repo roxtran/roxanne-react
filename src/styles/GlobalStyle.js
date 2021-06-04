@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
     max-width: 1100px;
     padding-left: 300px;
 
-    @media (max-width: 1128px) {
+    @media screen and (max-width: 1128px) {
       padding: 0rem 5%;
     }
   }
@@ -31,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1.3;
     color: var(--headingColor);
 
-    @media (max-width: 1000px) {
+    @media screen and (max-width: 1000px) {
       font-size: 2.5rem;
     }
   }
@@ -42,11 +42,11 @@ const GlobalStyle = createGlobalStyle`
     margin-bottom: 4.5rem;
     color: var(--headingColor);
 
-    @media (max-width: 1000px) {
+    @media screen and (max-width: 1000px) {
       font-size: 1.65rem;
     }
 
-    @media (max-width: 640px) {
+    @media screen and (max-width: 640px) {
       margin-bottom: 2.5rem;
     }
   }
@@ -54,11 +54,11 @@ const GlobalStyle = createGlobalStyle`
   h3 {
     font-size: 1.5rem;
 
-    @media (max-width: 1000px) {
+    @media screen and (max-width: 1000px) {
       font-size: 1.25rem;
     }
 
-    @media (max-width: 320px) {
+    @media screen and (max-width: 320px) {
       font-size: 1rem;
     }
   }
@@ -76,7 +76,7 @@ const GlobalStyle = createGlobalStyle`
       color: var(--headingColor);
     }
 
-    @media (max-width: 320px) {
+    @media screen and (max-width: 320px) {
       font-size: 1rem;
     }
   }
@@ -99,12 +99,12 @@ export const FooterBG = styled.div`
   height: 1070px;
   margin-top: -1070px;
 
-  @media (max-width: 690px) {
+  @media screen and (max-width: 690px) {
     height: 1300px;
     margin-top: -1300px;
   }
 
-  @media (max-width: 400px) {
+  @media screen and (max-width: 400px) {
     height: 1350px;
     margin-top: -1350px;
   }

@@ -52,7 +52,7 @@ const StyledHero = styled.div`
     right: 0%;
   }
 
-  @media (max-width: 1024px) {
+  @media screen and (max-width: 1024px) {
     min-height: 90vh;
     margin-top: 5%;
     img {
@@ -60,7 +60,7 @@ const StyledHero = styled.div`
     }
   }
 
-  @media (max-width: 650px) {
+  @media screen and (max-width: 650px) {
     min-height: 86vh;
     img {
       max-width: 100%;
@@ -74,7 +74,7 @@ const HeroHeader = styled.div`
   align-items: flex-start;
   margin-bottom: 22.5vh;
 
-  @media (max-width: 1024px) {
+  @media screen and (max-width: 1024px) {
     margin-bottom: 30vh;
   }
 `

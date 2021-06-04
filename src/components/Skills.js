@@ -54,7 +54,7 @@ const SkillsGrid = styled(motion.div)`
   grid-row-gap: 3.75rem;
   grid-column-gap: 1rem;
 
-  @media (max-width: 670px) {
+  @media screen and (max-width: 670px) {
     grid-template-columns: 1fr;
     grid-row-gap: 1rem;
 

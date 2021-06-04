@@ -110,12 +110,12 @@ const StyledContact = styled(motion.div)`
     right: 0;
     max-width: 270px;
 
-    @media (max-width: 670px) {
+    @media screen and (max-width: 670px) {
       top: -10%;
     }
   }
 
-  @media (max-width: 1125px) {
+  @media screen and (max-width: 1125px) {
     text-align: center;
     h2 {
       max-width: 75%;
@@ -123,7 +123,7 @@ const StyledContact = styled(motion.div)`
     }
   }
 
-  @media (max-width: 690px) {
+  @media screen and (max-width: 690px) {
     height: 100%;
   }
 `
@@ -134,11 +134,11 @@ const Cards = styled.div`
   justify-content: flex-start;
   flex-wrap: wrap;
 
-  @media (max-width: 1125px) {
+  @media screen and (max-width: 1125px) {
     justify-content: center;
   }
 
-  @media (max-width: 690px) {
+  @media screen and (max-width: 690px) {
     margin: 5rem 0;
   }
 `
@@ -152,11 +152,11 @@ const Card = styled.a`
   cursor: pointer;
   text-decoration: none;
 
-  @media (max-width: 1125px) {
+  @media screen and (max-width: 1125px) {
     margin: 2rem;
   }
 
-  @media (max-width: 320px) {
+  @media screen and (max-width: 320px) {
     margin: 1rem 0;
   }
 
