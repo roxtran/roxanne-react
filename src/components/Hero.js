@@ -7,7 +7,7 @@ import { slideUp, circle1Amin } from '../animation'
 const Hero = () => {
   return (
     <StyledHero id='hero'>
-      <HeroHeader className='hidden'>
+      <HeroHeader className='hide'>
         <motion.h3 variants={slideUp}>
           Roxanne<span>.</span>
         </motion.h3>

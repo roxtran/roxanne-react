@@ -8,7 +8,7 @@ import LandingPlage from '../img/landing-page.webp'
 import RestaurantApp from '../img/restaurant-app.webp'
 
 import { motion } from 'framer-motion'
-import { slideUp } from '../animation'
+import { zoomOut } from '../animation'
 import { useScroll } from './useScroll'
 
 const Projects = () => {
@@ -16,7 +16,7 @@ const Projects = () => {
   return (
     <StyledProjects
       id='projects'
-      variants={slideUp}
+      variants={zoomOut}
       initial='hidden'
       animate={controls}
       ref={element}
