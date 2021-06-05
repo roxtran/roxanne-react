@@ -50,8 +50,8 @@ const About = () => {
         ease: 'elastic.out'
       })
       .to(boxRef.current, {
-        duration: 2,
-        autoAlpha: 0.5,
+        duration: 2.6,
+        autoAlpha: 0.4,
         yoyo: true,
         repeat: -1,
         ease: "rough({template: none.out, strength:1,points:20, taper:'none', randomize: true, clamp: false})"
