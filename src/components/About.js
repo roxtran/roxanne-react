@@ -69,7 +69,7 @@ const About = () => {
 
       tl.to(textRef.current, { duration: 2, text: word })
       masterTL.add(tl)
-    })
+    }) // eslint-disable-next-line
   }, [])
 
   return (
