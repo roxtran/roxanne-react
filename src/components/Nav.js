@@ -15,7 +15,7 @@ const Nav = () => {
             duration={500}
             spy={true}
             exact='true'
-            offset={-55}
+            offset={-135}
           >
             What I Do
           </Scroll>
@@ -27,7 +27,7 @@ const Nav = () => {
             duration={500}
             spy={true}
             exact='true'
-            offset={-55}
+            offset={-135}
           >
             Projects
           </Scroll>
@@ -39,7 +39,7 @@ const Nav = () => {
             duration={500}
             spy={true}
             exact='true'
-            offset={-125}
+            offset={-165}
           >
             About Me
           </Scroll>
@@ -51,7 +51,7 @@ const Nav = () => {
             duration={500}
             spy={true}
             exact='true'
-            offset={0}
+            offset={-55}
           >
             Contact
           </Scroll>
