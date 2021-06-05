@@ -64,7 +64,6 @@ const Nav = () => {
 const Scroll = styled(LinkS)`
   color: var(--headingColor);
   cursor: pointer;
-
   &:hover,
   &.active {
     color: var(--yellow);

@@ -24,9 +24,7 @@ function App() {
         initial='hidden'
         animate='show'
       >
-        <header>
-          <Nav />
-        </header>
+        <Nav />
         <main>
           <Hero />
           <Skills />
