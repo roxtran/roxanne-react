@@ -24,8 +24,6 @@ const About = () => {
   ]
 
   useEffect(() => {
-    console.log(cursorRef)
-
     gsap.to(cursorRef.current, { opacity: 0, ease: 'power2.inOut', repeat: -1 })
 
     let boxTL = gsap.timeline()
@@ -34,7 +32,7 @@ const About = () => {
       .to(boxRef.current, {
         duration: 1,
         width: '3.85rem',
-        delay: 0.5,
+        delay: 1,
         ease: 'power4.inOut'
       })
       .from(hiRef.current, {
