@@ -16,7 +16,6 @@ const About = () => {
   const textRef = useRef(null)
   const cursorRef = useRef(null)
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const words = [
     'Roxanne Tran.',
     'a digital designer.',
@@ -71,7 +70,7 @@ const About = () => {
       tl.to(textRef.current, { duration: 2, text: word })
       masterTL.add(tl)
     })
-  }, [words])
+  }, [])
 
   return (
     <StyledAbout
