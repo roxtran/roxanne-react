@@ -33,18 +33,13 @@ const About = () => {
     boxTL
       .to(boxRef.current, {
         duration: 1,
-        width: '3.65rem',
+        width: '3.85rem',
         delay: 0.5,
         ease: 'power4.inOut'
       })
       .from(hiRef.current, {
-        opacity: 0,
-        y: '10px'
-      })
-      .to(hiRef.current, {
         duration: 1,
-        opacity: 1,
-        y: '0px',
+        y: '20px',
         ease: 'power3.out',
         delay: 0.5,
         onComplete: () => masterTL.play()
@@ -113,10 +108,9 @@ const StyledAbout = styled(motion.section)`
 
   .anim-text {
     position: relative;
-    /* display: inline-block; */
     font-weight: bold;
     font-style: italic;
-    /* font-size: 1.15rem; */
+    overflow: hidden;
   }
 
   .box {
@@ -126,15 +120,14 @@ const StyledAbout = styled(motion.section)`
     background-color: var(--yellow);
     /* width: 50px; */
     height: 2px;
-    left: -4px;
     z-index: -1;
   }
 
   .hi {
     /* color: #fff; */
-    opacity: 0;
     display: inline-block;
-    margin-right: 0.4rem;
+    margin: 0 0.4rem;
+    text-shadow: -2px 0px 5px rgba(0, 0, 0, 0.15);
   }
 
   @media screen and (max-width: 670px) {
