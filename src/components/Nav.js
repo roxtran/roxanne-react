@@ -51,7 +51,7 @@ const Nav = () => {
             duration={700}
             spy={true}
             exact='true'
-            offset={15}
+            offset={5}
           >
             Contact
           </Scroll>
