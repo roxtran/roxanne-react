@@ -81,7 +81,7 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-  span {
+  span.highlight {
     color: var(--yellow);
   }
 

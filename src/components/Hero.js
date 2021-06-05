@@ -9,7 +9,7 @@ const Hero = () => {
     <StyledHero id='hero'>
       <HeroHeader className='hide'>
         <motion.h3 variants={slideUp}>
-          Roxanne<span>.</span>
+          Roxanne<span className='highlight'>.</span>
         </motion.h3>
         <motion.a
           variants={slideUp}

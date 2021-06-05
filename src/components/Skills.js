@@ -28,7 +28,7 @@ const Skills = () => {
           promote accessibility and a better User Experience.
         </p>
         <h3>
-          <span>Front-End</span>
+          <span className='highlight'>Front-End</span>
         </h3>
         <p>
           Taking beautiful designs and building them into responsive and
