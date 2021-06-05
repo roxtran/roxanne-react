@@ -87,9 +87,7 @@ const About = () => {
             _
           </span>
         </p>
-        <br></br>
-        <p>Currently, I am working remotely for clients around the world.</p>
-        <br></br>
+        <p>Currently, I work remotely for clients around the world.</p>
         <p>
           I focus on working with growing startups to increase their results by
           either working with their brand/product directly or via consulting
@@ -105,6 +103,10 @@ const StyledAbout = styled(motion.section)`
   display: grid;
   grid-template-columns: 0.6fr 1fr;
   margin-bottom: 150px;
+
+  p {
+    margin-bottom: 1rem;
+  }
 
   .anim-text {
     position: relative;
