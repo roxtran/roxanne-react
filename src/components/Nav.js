@@ -39,7 +39,7 @@ const Nav = () => {
             duration={500}
             spy={true}
             exact='true'
-            offset={-115}
+            offset={-125}
           >
             About Me
           </Scroll>
