@@ -12,10 +12,10 @@ const Nav = () => {
           <Scroll
             to='skills'
             smooth={true}
-            duration={500}
+            duration={700}
             spy={true}
             exact='true'
-            offset={-135}
+            offset={-125}
           >
             What I Do
           </Scroll>
@@ -24,10 +24,10 @@ const Nav = () => {
           <Scroll
             to='projects'
             smooth={true}
-            duration={500}
+            duration={700}
             spy={true}
             exact='true'
-            offset={-135}
+            offset={-125}
           >
             Projects
           </Scroll>
@@ -36,7 +36,7 @@ const Nav = () => {
           <Scroll
             to='about'
             smooth={true}
-            duration={500}
+            duration={700}
             spy={true}
             exact='true'
             offset={-165}
@@ -48,10 +48,10 @@ const Nav = () => {
           <Scroll
             to='contact'
             smooth={true}
-            duration={500}
+            duration={700}
             spy={true}
             exact='true'
-            offset={-55}
+            offset={15}
           >
             Contact
           </Scroll>
@@ -88,7 +88,7 @@ const StyledNav = styled.nav`
     margin: 2rem 0rem;
   }
 
-  @media screen and (max-width: 1500px) {
+  @media screen and (max-width: 1700px) {
     top: 40px;
     ul {
       margin-top: 40px;
