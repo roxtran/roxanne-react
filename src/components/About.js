@@ -44,7 +44,7 @@ const About = () => {
       })
       .to(boxRef.current, {
         duration: 1,
-        height: '1.5rem',
+        height: '1.6rem',
         ease: 'elastic.out'
       })
       .to(boxRef.current, {
