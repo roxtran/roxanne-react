@@ -104,6 +104,7 @@ const Projects = () => {
 const StyledProjects = styled(motion.section)`
   margin-bottom: 150px;
   position: relative;
+  max-width: 90vw;
 `
 
 const ImgBG = styled.div`

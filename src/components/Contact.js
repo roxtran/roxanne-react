@@ -7,8 +7,7 @@ import circle3 from '../img/circle3.webp'
 // animation
 import { motion } from 'framer-motion'
 import { useScroll } from '../utils/useScroll'
-import { container, slideRight, slideLeft } from '../styles/animation'
-import { slideUp } from '../styles/animation'
+import { container, slideUp, slideRight, slideLeft } from '../styles/animation'
 
 const Contact = () => {
   const [element, controls] = useScroll()
@@ -112,6 +111,7 @@ const StyledContact = styled(motion.section)`
   background: var(--mint);
   height: 1070px;
   position: relative;
+  max-width: 90vw;
 
   h2 {
     max-width: 440px;

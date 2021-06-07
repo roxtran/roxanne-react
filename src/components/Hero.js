@@ -46,6 +46,7 @@ const StyledHero = styled(motion.section)`
   width: 100%;
   min-height: 88vh;
   margin-top: -215px;
+  max-width: 90vw;
   img {
     z-index: -1;
     max-width: 500px;

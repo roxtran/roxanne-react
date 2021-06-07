@@ -64,6 +64,7 @@ const Skills = () => {
 
 const StyledSkills = styled(motion.section)`
   margin-bottom: 150px;
+  max-width: 90vw;
 `
 
 const SkillsGrid = styled(motion.div)`
