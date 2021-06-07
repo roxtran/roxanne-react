@@ -45,10 +45,6 @@ const GlobalStyle = createGlobalStyle`
     @media screen and (max-width: 1000px) {
       font-size: 1.65rem;
     }
-
-    @media screen and (max-width: 640px) {
-      margin-bottom: 2.5rem;
-    }
   }
 
   h3 {
@@ -69,6 +65,10 @@ const GlobalStyle = createGlobalStyle`
 
   .header-wrapper {
     margin-bottom: 4.5rem;
+    
+    @media screen and (max-width: 640px) {
+      margin-bottom: 2.5rem;
+    }
   }
 
   a {
@@ -104,8 +104,8 @@ export const FooterBG = styled.div`
   margin-top: -1070px;
 
   @media screen and (max-width: 690px) {
-    height: 1300px;
-    margin-top: -1300px;
+    height: 1320px;
+    margin-top: -1320px;
   }
 
   @media screen and (max-width: 400px) {
