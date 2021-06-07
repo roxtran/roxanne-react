@@ -1,29 +1,27 @@
+// import components
+import Nav from './components/Nav'
+import Hero from './components/Hero'
+import Skills from './components/Skills'
 import About from './components/About'
 import Contact from './components/Contact'
-import Hero from './components/Hero'
-import Nav from './components/Nav'
 // import Projects from './components/Projects'
-import Skills from './components/Skills'
+
+// import styles
 import './styles/_variables.css'
 import GlobalStyle, { FooterBG } from './styles/GlobalStyle'
-// Lazy loading
-import { Suspense, lazy } from 'react'
-// Animation
-import { motion } from 'framer-motion'
-import { pageAnimation } from './styles/animation'
 
+// Animation
+import { AnimatePresence } from 'framer-motion'
+
+// Lazy loading
+import { lazy, Suspense } from 'react'
 const Projects = lazy(() => import('./components/Projects'))
 
 function App() {
   return (
-    <>
+    <AnimatePresence>
       <GlobalStyle />
-      <motion.div
-        className='container'
-        variants={pageAnimation}
-        initial='hidden'
-        animate='show'
-      >
+      <div className='container'>
         <Nav />
         <main>
           <Hero />
@@ -35,9 +33,9 @@ function App() {
           <About />
           <Contact />
         </main>
-      </motion.div>
+      </div>
       <FooterBG />
-    </>
+    </AnimatePresence>
   )
 }
 

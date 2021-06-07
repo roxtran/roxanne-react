@@ -1,29 +1,38 @@
 import React from 'react'
 import styled from 'styled-components'
+// import assets
 import circle2 from '../img/circle2.webp'
 import ReactFramer from '../img/react-framer.jpg'
 import MusicPlayer from '../img/music-player.webp'
 import WooCommerce from '../img/woocommerce.webp'
 import LandingPlage from '../img/landing-page.webp'
 import RestaurantApp from '../img/restaurant-app.webp'
-
-import { motion } from 'framer-motion'
-import { slideRight, zoomOut } from '../styles/animation'
+// animation
 import { useScroll } from '../utils/useScroll'
+import { motion } from 'framer-motion'
+import { container, slideUp, slideRight, slideLeft } from '../styles/animation'
 
 const Projects = () => {
   const [element, controls] = useScroll()
   return (
     <StyledProjects
       id='projects'
-      variants={slideRight}
+      variants={container}
       initial='hidden'
       animate={controls}
-      ref={element}
+      exit='exit'
     >
-      <h2>Some of my projects</h2>
-      <ProjectsGrid variants={zoomOut}>
-        <div className='card'>
+      <div className='hide-overflow header-wrapper'>
+        <motion.h2 variants={slideUp}>Some of my projects</motion.h2>
+      </div>
+      <ProjectsGrid
+        variants={container}
+        initial='hidden'
+        animate={controls}
+        exit='exit'
+        ref={element}
+      >
+        <motion.div variants={slideRight} className='card'>
           <a
             href='https://capture-framer.netlify.app'
             target='_blank'
@@ -34,8 +43,8 @@ const Projects = () => {
             </div>
             <img src={ReactFramer} alt='React Framer' />
           </a>
-        </div>
-        <div className='card'>
+        </motion.div>
+        <motion.div variants={slideLeft} className='card'>
           <a
             href='https://rox-react-player.netlify.app'
             target='_blank'
@@ -46,24 +55,24 @@ const Projects = () => {
             </div>
             <img src={MusicPlayer} alt='Music Player App' />
           </a>
-        </div>
-        <div className='card'>
+        </motion.div>
+        <motion.div variants={slideRight} className='card'>
           <a href='http://rhemaworld.com' target='_blank' rel='noreferrer'>
             <div className='img-overlay'>
               <h3>WooCommerce</h3>
             </div>
             <img src={WooCommerce} alt='WooCommerce' />
           </a>
-        </div>
-        <div className='card'>
+        </motion.div>
+        <motion.div variants={slideLeft} className='card'>
           <a href='https://rhemacanada.ca' target='_blank' rel='noreferrer'>
             <div className='img-overlay'>
               <h3>Landing Page</h3>
             </div>
             <img src={LandingPlage} alt='Landing Page' />
           </a>
-        </div>
-        <div className='card'>
+        </motion.div>
+        <motion.div variants={slideRight} className='card'>
           <a
             href='https://macopolo.herokuapp.com'
             target='_blank'
@@ -74,8 +83,8 @@ const Projects = () => {
             </div>
             <img src={RestaurantApp} alt='Restaurant App' />
           </a>
-        </div>
-        <div className='card'>
+        </motion.div>
+        <motion.div variants={slideLeft} className='card'>
           <a
             href='https://dribbble.com/roxannetran'
             target='_blank'
@@ -83,7 +92,7 @@ const Projects = () => {
           >
             <p>View my artwork on dribbble</p>
           </a>
-        </div>
+        </motion.div>
       </ProjectsGrid>
       <ImgBG>
         <img src={circle2} alt='circle2' />
@@ -100,7 +109,7 @@ const StyledProjects = styled(motion.section)`
 const ImgBG = styled.div`
   z-index: -1;
   position: absolute;
-  left: -18%;
+  slideRight: -18%;
   top: 58%;
   img {
     max-width: 200px;
@@ -135,7 +144,7 @@ const ProjectsGrid = styled(motion.div)`
 
     a {
       color: var(--yellow);
-      /* text-decoration: none; */
+      /* slideUp-decoration: none; */
       &:hover {
         color: var(--headingColor);
       }

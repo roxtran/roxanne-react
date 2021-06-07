@@ -38,8 +38,7 @@ const GlobalStyle = createGlobalStyle`
 
   h2 {
     font-size: 2rem;
-    line-height: 1.3;
-    margin-bottom: 4.5rem;
+    line-height: 1.4;
     color: var(--headingColor);
 
     @media screen and (max-width: 1000px) {
@@ -67,6 +66,10 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.1rem;
   }
 
+  .header-wrapper {
+    margin-bottom: 4.5rem;
+  }
+
   a {
     color: var(--yellow);
     font-size: 1rem;
@@ -81,7 +84,7 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-  span.highlight {
+  .highlight {
     color: var(--yellow);
   }
 
@@ -89,7 +92,7 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1.45;
   }
 
-  .hide {
+  .hide-overflow {
     overflow: hidden;
   }
 `

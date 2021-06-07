@@ -1,14 +1,15 @@
 import React from 'react'
-import styled from 'styled-components'
 import { Link as LinkS } from 'react-scroll'
+import styled from 'styled-components'
+// Animation
 import { motion } from 'framer-motion'
-import { slideRight } from '../styles/animation'
+import { navAnim, navlinkAnim } from '../styles/animation'
 
 const Nav = () => {
   return (
-    <StyledNav>
+    <StyledNav variants={navAnim} initial='hidden' animate='show'>
       <ul>
-        <motion.li variants={slideRight}>
+        <motion.li variants={navlinkAnim}>
           <Scroll
             to='skills'
             smooth={true}
@@ -20,7 +21,7 @@ const Nav = () => {
             What I Do
           </Scroll>
         </motion.li>
-        <motion.li variants={slideRight}>
+        <motion.li variants={navlinkAnim}>
           <Scroll
             to='projects'
             smooth={true}
@@ -32,7 +33,7 @@ const Nav = () => {
             Projects
           </Scroll>
         </motion.li>
-        <motion.li variants={slideRight}>
+        <motion.li variants={navlinkAnim}>
           <Scroll
             to='about'
             smooth={true}
@@ -44,7 +45,7 @@ const Nav = () => {
             About Me
           </Scroll>
         </motion.li>
-        <motion.li variants={slideRight}>
+        <motion.li variants={navlinkAnim}>
           <Scroll
             to='contact'
             smooth={true}
@@ -70,7 +71,7 @@ const Scroll = styled(LinkS)`
   }
 `
 
-const StyledNav = styled.nav`
+const StyledNav = styled(motion.nav)`
   width: 300px;
   margin-left: -300px;
   position: sticky;

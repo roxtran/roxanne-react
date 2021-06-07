@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion'
 import React, { useEffect, useRef } from 'react'
 import styled from 'styled-components'
+// animation
 import { useScroll } from '../utils/useScroll'
 import { gsap } from 'gsap'
 import { TextPlugin } from 'gsap/TextPlugin'
-import { slideRight, slideUp } from '../styles/animation'
+import { container, slideRight, slideLeft } from '../styles/animation'
 
 gsap.registerPlugin(TextPlugin)
 
@@ -68,14 +69,22 @@ const About = () => {
   return (
     <StyledAbout
       id='about'
-      variants={slideRight}
+      variants={container}
       initial='hidden'
       animate={controls}
+      exit='exit'
       ref={element}
     >
-      <h2>About Me</h2>
-      <motion.div variants={slideUp}>
-        <p className='anim-text'>
+      <div className='header-wrapper'>
+        <motion.h2 variants={slideRight}>About Me</motion.h2>
+      </div>
+      <motion.div
+        variants={container}
+        initial='hidden'
+        animate={controls}
+        exit='exit'
+      >
+        <motion.p variants={slideLeft} className='anim-text'>
           <span ref={boxRef} className='box'></span>
           <span ref={hiRef} className='hi'>
             Hi, I'm{' '}
@@ -84,13 +93,15 @@ const About = () => {
           <span ref={cursorRef} className='cursor'>
             _
           </span>
-        </p>
-        <p>Currently, I work remotely for clients around the world.</p>
-        <p>
+        </motion.p>
+        <motion.p variants={slideLeft}>
+          Currently, I work remotely for clients around the world.
+        </motion.p>
+        <motion.p variants={slideLeft}>
           I focus on working with growing startups to increase their results by
           either working with their brand/product directly or via consulting
           with their existing team.
-        </p>
+        </motion.p>
       </motion.div>
     </StyledAbout>
   )

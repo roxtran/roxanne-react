@@ -1,78 +1,48 @@
 import React from 'react'
 import styled from 'styled-components'
+// import assets
 import consult from '../img/consult.gif'
 import design from '../img/design.gif'
 import circle3 from '../img/circle3.webp'
-
+// animation
 import { motion } from 'framer-motion'
-import { fade } from '../styles/animation'
 import { useScroll } from '../utils/useScroll'
+import { container, slideRight, slideLeft } from '../styles/animation'
+import { slideUp } from '../styles/animation'
 
 const Contact = () => {
   const [element, controls] = useScroll()
   return (
     <StyledContact
       id='contact'
-      variants={fade}
+      variants={container}
       initial='hidden'
       animate={controls}
+      exit='exit'
       ref={element}
     >
-      <Social>
-        <h3>Social</h3>
-        <ul>
-          <li>
-            <a
-              href='https://www.linkedin.com/in/roxtran/'
-              target='_blank'
-              rel='noreferrer'
-            >
-              Linkedin
-            </a>
-          </li>
-          <li>
-            <a
-              href='https://www.pinterest.ca/rox127/'
-              target='_blank'
-              rel='noreferrer'
-            >
-              Pinterest
-            </a>
-          </li>
-          <li>
-            <a
-              href='https://www.facebook.com/rox127/'
-              target='_blank'
-              rel='noreferrer'
-            >
-              Facebook
-            </a>
-          </li>
-          <li>
-            <a
-              href='https://www.instagram.com/rox127/'
-              target='_blank'
-              rel='noreferrer'
-            >
-              Instagram
-            </a>
-          </li>
-        </ul>
-      </Social>
-
-      <h2>
-        Working with growing startups to increase results. Start a Project
-        Today.
-      </h2>
-      <a
+      <div className='header-wrapper'>
+        <h2>
+          <motion.span variants={slideLeft}>Working with growing</motion.span>
+          <motion.span variants={slideLeft}>
+            startups to increase results.
+          </motion.span>
+          <motion.span variants={slideLeft}>Start a Project Today.</motion.span>
+        </h2>
+      </div>
+      <motion.a
+        variants={slideLeft}
         href='mailto:tran.rox@gmail.com?subject=Info'
         target='_blank'
         rel='noreferrer'
       >
         Let's talk about your product
-      </a>
+      </motion.a>
       <Cards>
-        <Card href='mailto:tran.rox@gmail.com?subject=Consulting'>
+        <Card
+          variants={slideUp}
+          href='mailto:tran.rox@gmail.com?subject=Consulting'
+        >
           <img src={consult} alt='consulting' />
           <h4>Consulting</h4>
           <p>
@@ -80,7 +50,10 @@ const Contact = () => {
             existing products and brands.
           </p>
         </Card>
-        <Card href='mailto:tran.rox@gmail.com?subject=Design Concept'>
+        <Card
+          variants={slideUp}
+          href='mailto:tran.rox@gmail.com?subject=Design Concept'
+        >
           <img src={design} alt='design concept' />
           <h4>Try a Design Concept</h4>
           <p>
@@ -90,6 +63,47 @@ const Contact = () => {
         </Card>
       </Cards>
       <img src={circle3} alt='circle3' className='circle' />
+      <Social>
+        <motion.h3 variants={slideRight}>Social</motion.h3>
+        <ul>
+          <motion.li variants={slideRight}>
+            <a
+              href='https://www.linkedin.com/in/roxtran/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Linkedin
+            </a>
+          </motion.li>
+          <motion.li variants={slideRight}>
+            <a
+              href='https://www.pinterest.ca/rox127/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Pinterest
+            </a>
+          </motion.li>
+          <motion.li variants={slideRight}>
+            <a
+              href='https://www.facebook.com/rox127/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Facebook
+            </a>
+          </motion.li>
+          <motion.li variants={slideRight}>
+            <a
+              href='https://www.instagram.com/rox127/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Instagram
+            </a>
+          </motion.li>
+        </ul>
+      </Social>
     </StyledContact>
   )
 }
@@ -102,6 +116,9 @@ const StyledContact = styled(motion.section)`
   h2 {
     max-width: 440px;
     padding-top: 10rem;
+    span {
+      display: block;
+    }
   }
 
   img.circle {
@@ -143,7 +160,7 @@ const Cards = styled.div`
   }
 `
 
-const Card = styled.a`
+const Card = styled(motion.a)`
   background: white;
   width: 250px;
   height: 100%;
@@ -184,7 +201,7 @@ const Social = styled.div`
   width: 300px;
   margin-left: -300px;
   position: absolute;
-  bottom: 15rem;
+  bottom: 14rem;
   ul {
     list-style: none;
   }

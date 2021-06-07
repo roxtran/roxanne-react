@@ -1,50 +1,68 @@
 import React from 'react'
 import styled from 'styled-components'
-import { motion } from 'framer-motion'
-import { fade, slideUp } from '../styles/animation'
+//animation
 import { useScroll } from '../utils/useScroll'
+import { motion } from 'framer-motion'
+import { container, slideRight, slideLeft } from '../styles/animation'
 
 const Skills = () => {
   const [element, controls] = useScroll()
   return (
-    <StyledSkills id='skills'>
-      <motion.h2 variants={slideUp}>
-        Multidisciplinary digital designer & developer
-      </motion.h2>
+    <StyledSkills
+      id='skills'
+      variants={container}
+      initial='hidden'
+      animate='show'
+      exit='exit'
+    >
+      <div className='hide-overflow header-wrapper'>
+        <motion.h2
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            ease: 'easeInOut',
+            duration: 0.4,
+            delay: 1.2
+          }}
+        >
+          Multidisciplinary digital designer & developer
+        </motion.h2>
+      </div>
       <SkillsGrid
-        variants={fade}
+        variants={container}
         initial='hidden'
         animate={controls}
+        exit='exit'
         ref={element}
       >
-        <h3>User Interface</h3>
-        <p>
+        <motion.h3 variants={slideRight}>User Interface</motion.h3>
+        <motion.p variants={slideLeft}>
           Creating beautiful interface for products that not only look good but
           are functional.
-        </p>
-        <h3>User Experience</h3>
-        <p>
+        </motion.p>
+        <motion.h3 variants={slideRight}>User Experience</motion.h3>
+        <motion.p variants={slideLeft}>
           Tackling each project with a user focused mindset. User testing to
           promote accessibility and a better User Experience.
-        </p>
-        <h3>
-          <span className='highlight'>Front-End</span>
-        </h3>
-        <p>
+        </motion.p>
+        <motion.h3 variants={slideRight} className='highlight'>
+          Front-End
+        </motion.h3>
+        <motion.p variants={slideLeft}>
           Taking beautiful designs and building them into responsive and
           functional websites. Using a CMS for easier web maintenance.
-        </p>
-        <h3>Consulting</h3>
-        <p>
+        </motion.p>
+        <motion.h3 variants={slideRight}>Consulting</motion.h3>
+        <motion.p variants={slideLeft}>
           Consulting for companies with an existing team. Helping to improve
           existing products and brands.
-        </p>
+        </motion.p>
       </SkillsGrid>
     </StyledSkills>
   )
 }
 
-const StyledSkills = styled.section`
+const StyledSkills = styled(motion.section)`
   margin-bottom: 150px;
 `
 

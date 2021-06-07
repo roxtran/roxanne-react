@@ -1,13 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
 import circle1 from '../img/circle1.webp'
+// Animation
 import { motion } from 'framer-motion'
-import { slideUp, circle1Amin } from '../styles/animation'
+import { container, slideUp, circleAnim } from '../styles/animation'
 
 const Hero = () => {
   return (
-    <StyledHero id='hero'>
-      <HeroHeader className='hide'>
+    <StyledHero
+      id='hero'
+      variants={container}
+      initial='hidden'
+      animate='show'
+      exit='exit'
+    >
+      <HeroHeader className='hide-overflow'>
+        <motion.img variants={circleAnim} src={circle1} alt='circle1' />
         <motion.h3 variants={slideUp}>
           Roxanne<span className='highlight'>.</span>
         </motion.h3>
@@ -15,31 +23,25 @@ const Hero = () => {
           variants={slideUp}
           href='mailto:tran.rox@gmail.com?subject=Info'
           target='_blank'
+          rel='noreferrer'
         >
           Let's Start a Project
         </motion.a>
       </HeroHeader>
-      <div className='hide'>
+      <div className='hide-overflow'>
         <motion.h1 variants={slideUp}>Full Stack</motion.h1>
       </div>
-      <div className='hide'>
+      <div className='hide-overflow'>
         <motion.h1 variants={slideUp}>Digital Designer</motion.h1>
       </div>
-      <div className='hide'>
+      <div className='hide-overflow'>
         <motion.h1 variants={slideUp}>& Developer</motion.h1>
       </div>
-      <motion.img
-        variants={circle1Amin}
-        initial='hidden'
-        animate='show'
-        src={circle1}
-        alt='circle1'
-      />
     </StyledHero>
   )
 }
 
-const StyledHero = styled.section`
+const StyledHero = styled(motion.section)`
   position: relative;
   width: 100%;
   min-height: 88vh;
