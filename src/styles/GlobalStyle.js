@@ -20,6 +20,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0 auto;
     max-width: 1100px;
     padding-left: 300px;
+    overflow-x: hidden;
 
     @media screen and (max-width: 1128px) {
       padding: 0rem 5%;

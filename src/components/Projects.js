@@ -109,7 +109,7 @@ const StyledProjects = styled(motion.section)`
 const ImgBG = styled.div`
   z-index: -1;
   position: absolute;
-  slideRight: -18%;
+  left: -18%;
   top: 58%;
   img {
     max-width: 200px;
