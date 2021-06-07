@@ -23,11 +23,11 @@ const Contact = () => {
     >
       <div className='header-wrapper'>
         <h2>
-          <motion.span variants={slideLeft}>Working with growing</motion.span>
+          <motion.span variants={slideLeft}>Working with growing</motion.span>{' '}
           <motion.span variants={slideLeft}>
             startups to increase results.
-          </motion.span>
-          <motion.span variants={slideLeft}>Start a Project Today.</motion.span>
+          </motion.span>{' '}
+          <motion.span variants={slideLeft}>Start a Project Today.</motion.span>{' '}
         </h2>
       </div>
       <motion.a
@@ -116,9 +116,6 @@ const StyledContact = styled(motion.section)`
   h2 {
     max-width: 440px;
     padding-top: 10rem;
-    span {
-      display: block;
-    }
   }
 
   img.circle {
