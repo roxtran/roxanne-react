@@ -102,6 +102,11 @@ export const FooterBG = styled.div`
   height: 1070px;
   margin-top: -1070px;
 
+  @media screen and (max-width: 768px) {
+    height: 1020px;
+    margin-top: -1020px;
+  }
+
   @media screen and (max-width: 690px) {
     height: 1320px;
     margin-top: -1320px;

@@ -137,7 +137,7 @@ const StyledContact = styled(motion.section)`
     }
   }
 
-  @media screen and (max-width: 690px) {
+  @media screen and (max-width: 768px) {
     height: 100%;
   }
 `
