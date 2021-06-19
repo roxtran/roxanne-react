@@ -1,1 +1,1 @@
-My Portfolio built with React, styled-components, and netlify.
+My Portfolio built with React, styled-components, and Netlify.
