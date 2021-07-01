@@ -3,7 +3,7 @@ import styled from 'styled-components'
 // import assets
 import consult from '../img/consult.gif'
 import design from '../img/design.gif'
-import circle3 from '../img/circle3.webp'
+import circle3 from '../img/circle3.png'
 // animation
 import { motion } from 'framer-motion'
 import { useScroll } from '../utils/useScroll'

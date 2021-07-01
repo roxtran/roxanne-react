@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 // import assets
-import circle2 from '../img/circle2.webp'
+import circle2 from '../img/circle2.png'
 import ReactFramer from '../img/react-framer.jpg'
-import MusicPlayer from '../img/music-player.webp'
-import WooCommerce from '../img/woocommerce.webp'
-import LandingPlage from '../img/landing-page.webp'
-import RestaurantApp from '../img/restaurant-app.webp'
+import MusicPlayer from '../img/music-player.jpg'
+import WooCommerce from '../img/woocommerce.jpg'
+import LandingPlage from '../img/landing-page.jpg'
+import RestaurantApp from '../img/restaurant-app.jpg'
 // animation
 import { useScroll } from '../utils/useScroll'
 import { motion } from 'framer-motion'
