@@ -105,7 +105,6 @@ const StyledProjects = styled(motion.section)`
   margin-bottom: 150px;
   position: relative;
   max-width: 90vw;
-  overflow-x: hidden;
 `
 
 const ImgBG = styled.div`
@@ -122,6 +121,7 @@ const ProjectsGrid = styled(motion.div)`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 3.75rem;
+  overflow-x: hidden;
 
   @media screen and (max-width: 670px) {
     grid-template-columns: 1fr;
