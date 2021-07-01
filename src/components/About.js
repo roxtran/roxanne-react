@@ -113,6 +113,7 @@ const StyledAbout = styled(motion.section)`
   grid-template-columns: 0.6fr 1fr;
   margin-bottom: 150px;
   max-width: 90vw;
+  overflow-x: hidden;
 
   p {
     margin-bottom: 1rem;

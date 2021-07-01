@@ -22,7 +22,7 @@ const Skills = () => {
           transition={{
             ease: 'easeInOut',
             duration: 0.4,
-            delay: 1.2
+            delay: 1.2,
           }}
         >
           Multidisciplinary digital designer & developer
@@ -65,6 +65,7 @@ const Skills = () => {
 const StyledSkills = styled(motion.section)`
   margin-bottom: 150px;
   max-width: 90vw;
+  overflow-x: hidden;
 `
 
 const SkillsGrid = styled(motion.div)`

@@ -105,6 +105,7 @@ const StyledProjects = styled(motion.section)`
   margin-bottom: 150px;
   position: relative;
   max-width: 90vw;
+  overflow-x: hidden;
 `
 
 const ImgBG = styled.div`
