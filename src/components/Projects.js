@@ -2,12 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 // import assets
 import circle2 from '../img/circle2.png'
-import ReactFramer from '../img/react-framer.jpg'
-import MusicPlayer from '../img/music-player.jpg'
-import WooCommerce from '../img/woocommerce.jpg'
-import LandingPlage from '../img/landing-page.jpg'
+import RhemaOnline from '../img/rhemaonline.jpg'
+import RhemaCanada from '../img/rhemacanada.jpg'
 import RestaurantApp from '../img/restaurant-app.jpg'
-// animation
+import KingsCollegeTutoring from '../img/kingscollegetutoring.jpg'
+import KingsCollegePSC from '../img/kingscollegepsc.jpg'
 import { useScroll } from '../utils/useScroll'
 import { motion } from 'framer-motion'
 import { container, slideUp, slideRight, slideLeft } from '../styles/animation'
@@ -34,42 +33,22 @@ const Projects = () => {
       >
         <motion.div variants={slideRight} className='card'>
           <a
-            href='https://capture-framer.netlify.app'
+            href='https://rhemaonline.vercel.app'
             target='_blank'
             rel='noreferrer'
           >
             <div className='img-overlay'>
-              <h3>React with Framer</h3>
+              <h3>Rhema Online</h3>
             </div>
-            <img src={ReactFramer} alt='React Framer' />
-          </a>
-        </motion.div>
-        <motion.div variants={slideLeft} className='card'>
-          <a
-            href='https://rox-react-player.netlify.app'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <div className='img-overlay'>
-              <h3>Music Player App</h3>
-            </div>
-            <img src={MusicPlayer} alt='Music Player App' />
-          </a>
-        </motion.div>
-        <motion.div variants={slideRight} className='card'>
-          <a href='http://rhemaworld.com' target='_blank' rel='noreferrer'>
-            <div className='img-overlay'>
-              <h3>WooCommerce</h3>
-            </div>
-            <img src={WooCommerce} alt='WooCommerce' />
+            <img src={RhemaOnline} alt='Rhema Online' />
           </a>
         </motion.div>
         <motion.div variants={slideLeft} className='card'>
           <a href='https://rhemacanada.ca' target='_blank' rel='noreferrer'>
             <div className='img-overlay'>
-              <h3>Landing Page</h3>
+              <h3>Rhema Canada</h3>
             </div>
-            <img src={LandingPlage} alt='Landing Page' />
+            <img src={RhemaCanada} alt='Rhema Canada' />
           </a>
         </motion.div>
         <motion.div variants={slideRight} className='card'>
@@ -82,6 +61,26 @@ const Projects = () => {
               <h3>Restaurant App</h3>
             </div>
             <img src={RestaurantApp} alt='Restaurant App' />
+          </a>
+        </motion.div>{' '}
+        <motion.div variants={slideLeft} className='card'>
+          <a
+            href='https://kingscollegetutoring.org'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <div className='img-overlay'>
+              <h3>King's College Tutoring</h3>
+            </div>
+            <img src={KingsCollegeTutoring} alt='React Framer' />
+          </a>
+        </motion.div>
+        <motion.div variants={slideRight} className='card'>
+          <a href='https://kingscollegepsc.ca' target='_blank' rel='noreferrer'>
+            <div className='img-overlay'>
+              <h3>King's College PSC</h3>
+            </div>
+            <img src={KingsCollegePSC} alt='Music Player App' />
           </a>
         </motion.div>
         <motion.div variants={slideLeft} className='card'>
