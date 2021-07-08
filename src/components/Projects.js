@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 // import assets
 import circle2 from '../img/circle2.png'
+import ReactFramer from '../img/react-framer.jpg'
+import MusicPlayer from '../img/music-player.jpg'
 import RhemaOnline from '../img/rhemaonline.jpg'
 import RhemaCanada from '../img/rhemacanada.jpg'
 import RestaurantApp from '../img/restaurant-app.jpg'
@@ -31,6 +33,30 @@ const Projects = () => {
         exit='exit'
         ref={element}
       >
+        <motion.div variants={slideRight} className='card'>
+          <a
+            href='https://capture-framer.netlify.app'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <div className='img-overlay'>
+              <h3>React Framer</h3>
+            </div>
+            <img src={ReactFramer} alt='React Framer' />
+          </a>
+        </motion.div>
+        <motion.div variants={slideLeft} className='card'>
+          <a
+            href='https://rox-react-player.netlify.app'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <div className='img-overlay'>
+              <h3>Music Player</h3>
+            </div>
+            <img src={MusicPlayer} alt='Music Player' />
+          </a>
+        </motion.div>
         <motion.div variants={slideRight} className='card'>
           <a
             href='https://rhemaonline.vercel.app'
