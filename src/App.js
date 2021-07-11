@@ -4,7 +4,6 @@ import Hero from './components/Hero'
 import Skills from './components/Skills'
 import About from './components/About'
 import Contact from './components/Contact'
-// import Projects from './components/Projects'
 
 // import styles
 import './styles/_variables.css'
