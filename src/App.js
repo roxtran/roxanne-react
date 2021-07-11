@@ -18,7 +18,7 @@ const Projects = lazy(() => import('./components/Projects'))
 const About = lazy(() => import('./components/About'))
 const Contact = lazy(() => import('./components/Contact'))
 const FooterBG = lazy(() =>
-  import('./components/Contact').then((module) => ({
+  import('./styles/GlobalStyle').then((module) => ({
     default: module.FooterBG,
   }))
 )
