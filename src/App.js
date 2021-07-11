@@ -5,6 +5,7 @@ import Skills from './components/Skills'
 import About from './components/About'
 import Contact from './components/Contact'
 
+// import Loader
 import Loader from 'react-loader-spinner'
 
 // import styles
@@ -26,21 +27,15 @@ function App() {
   return (
     <Suspense
       fallback={
-        <Loader
-          type='ThreeDots'
-          color='var(--headingColor)'
-          height={100}
-          width={100}
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            width: '100vw',
-            height: '100vh',
-            // margin: 'auto',
-          }}
-          timeout={3000} //3 secs
-        />
+        <div align='center'>
+          <Loader
+            type='ThreeDots'
+            color='var(--headingColor)'
+            height={100}
+            width={100}
+            timeout={3000} //3 secs
+          />
+        </div>
       }
     >
       <AnimatePresence>
@@ -58,11 +53,6 @@ function App() {
                   color='var(--headingColor)'
                   height={100}
                   width={100}
-                  // style={{
-                  //   display: 'flex',
-                  //   justifyContent: 'center',
-                  //   alignItems: 'center',
-                  // }}
                   timeout={3000} //3 secs
                 />
               }
