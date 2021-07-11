@@ -62,7 +62,11 @@ const Contact = () => {
           </p>
         </Card>
       </Cards>
-      <img src={circle3} alt='circle3' className='circle' />
+      <picture>
+        <source srcSet={circle3w} type='image/webp' />
+        <source srcSet={circle3} type='image/jpeg' />
+        <img src={circle3} alt='circle3' className='circle' />
+      </picture>
       <Social>
         <motion.h3 variants={slideRight}>Social</motion.h3>
         <ul>
