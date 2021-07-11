@@ -76,7 +76,7 @@ const Contact = () => {
               target='_blank'
               rel='noreferrer'
             >
-              Linkedin
+              LinkedIn
             </a>
           </motion.li>
           <motion.li variants={slideRight}>
