@@ -16,12 +16,12 @@ const Hero = () => {
       exit='exit'
     >
       <HeroHeader className='hide-overflow'>
-        <motion.picture variants={circleAnim}>
+        {/* <motion.picture variants={circleAnim}>
           <source srcSet={circle1w} type='image/webp' />
           <source srcSet={circle1} type='image/jpeg' />
           <img src={circle1} alt='circle1' />
-        </motion.picture>
-        {/* <motion.img variants={circleAnim} src={circle1} alt='circle1' /> */}
+        </motion.picture> */}
+        <motion.img variants={circleAnim} src={circle1} alt='circle1' />{' '}
         <motion.h3 variants={slideUp}>
           Roxanne<span className='highlight'>.</span>
         </motion.h3>
