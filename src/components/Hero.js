@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import circle1w from '../img/circle1.webp'
 import circle1 from '../img/circle1a.png'
@@ -16,13 +16,11 @@ const Hero = () => {
       exit='exit'
     >
       <HeroHeader className='hide-overflow'>
-        <Suspense fallback={<div>Loading...</div>}>
-          <motion.picture variants={circleAnim}>
-            <source srcSet={circle1w} type='image/webp' />
-            <source srcSet={circle1} type='image/jpeg' />
-            <img src={circle1} alt='circle1' />
-          </motion.picture>
-        </Suspense>
+        <motion.picture variants={circleAnim}>
+          <source srcSet={circle1w} type='image/webp' />
+          <source srcSet={circle1} type='image/jpeg' />
+          <img src={circle1} alt='circle1' />
+        </motion.picture>
         {/* <motion.img variants={circleAnim} src={circle1} alt='circle1' /> */}
         <motion.h3 variants={slideUp}>
           Roxanne<span className='highlight'>.</span>
