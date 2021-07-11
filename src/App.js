@@ -3,7 +3,6 @@ import Nav from './components/Nav'
 import Hero from './components/Hero'
 // import styles
 import './styles/_variables.css'
-// import GlobalStyle from './styles/GlobalStyle'
 // Animation
 import { AnimatePresence } from 'framer-motion'
 // import Lazy loading
