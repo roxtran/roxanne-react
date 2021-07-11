@@ -1,13 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
 // import assets
-import circle2 from '../img/circle2.png'
+import circle2 from '../img/circle2a.png'
+import circle2w from '../img/circle2.webp'
+import ReactFramerw from '../img/react-framer.webp'
 import ReactFramer from '../img/react-framer.jpg'
+import MusicPlayerw from '../img/music-player.webp'
 import MusicPlayer from '../img/music-player.jpg'
+import RhemaOnlinew from '../img/rhemaonline.webp'
 import RhemaOnline from '../img/rhemaonline.jpg'
+import RhemaCanadaw from '../img/rhemacanada.webp'
 import RhemaCanada from '../img/rhemacanada.jpg'
+import RestaurantAppw from '../img/restaurant-app.webp'
 import RestaurantApp from '../img/restaurant-app.jpg'
+import KingsCollegeTutoringw from '../img/kingscollegetutoring.webp'
 import KingsCollegeTutoring from '../img/kingscollegetutoring.jpg'
+import KingsCollegePSCw from '../img/kingscollegepsc.webp'
 import KingsCollegePSC from '../img/kingscollegepsc.jpg'
 import { useScroll } from '../utils/useScroll'
 import { motion } from 'framer-motion'
@@ -42,7 +50,11 @@ const Projects = () => {
             <div className='img-overlay'>
               <h3>React Framer</h3>
             </div>
-            <img src={ReactFramer} alt='React Framer' />
+            <picture>
+              <source srcSet={ReactFramerw} type='image/webp' />
+              <source srcSet={ReactFramer} type='image/jpeg' />
+              <img src={ReactFramer} alt='React Framer' />
+            </picture>
           </a>
         </motion.div>
         <motion.div variants={slideLeft} className='card'>
@@ -54,7 +66,11 @@ const Projects = () => {
             <div className='img-overlay'>
               <h3>Music Player</h3>
             </div>
-            <img src={MusicPlayer} alt='Music Player' />
+            <picture>
+              <source srcSet={MusicPlayerw} type='image/webp' />
+              <source srcSet={MusicPlayer} type='image/jpeg' />
+              <img src={MusicPlayer} alt='Music Player' />
+            </picture>
           </a>
         </motion.div>
         <motion.div variants={slideRight} className='card'>
@@ -66,7 +82,11 @@ const Projects = () => {
             <div className='img-overlay'>
               <h3>Rhema Online</h3>
             </div>
-            <img src={RhemaOnline} alt='Rhema Online' />
+            <picture>
+              <source srcSet={RhemaOnlinew} type='image/webp' />
+              <source srcSet={RhemaOnline} type='image/jpeg' />
+              <img src={RhemaOnline} alt='Rhema Online' />
+            </picture>
           </a>
         </motion.div>
         <motion.div variants={slideLeft} className='card'>
@@ -74,7 +94,11 @@ const Projects = () => {
             <div className='img-overlay'>
               <h3>Rhema Canada</h3>
             </div>
-            <img src={RhemaCanada} alt='Rhema Canada' />
+            <picture>
+              <source srcSet={RhemaCanadaw} type='image/webp' />
+              <source srcSet={RhemaCanada} type='image/jpeg' />
+              <img src={RhemaCanada} alt='Rhema Canada' />
+            </picture>
           </a>
         </motion.div>
         <motion.div variants={slideRight} className='card'>
@@ -86,7 +110,11 @@ const Projects = () => {
             <div className='img-overlay'>
               <h3>Restaurant App</h3>
             </div>
-            <img src={RestaurantApp} alt='Restaurant App' />
+            <picture>
+              <source srcSet={RestaurantAppw} type='image/webp' />
+              <source srcSet={RestaurantApp} type='image/jpeg' />
+              <img src={RestaurantApp} alt='Restaurant App' />
+            </picture>
           </a>
         </motion.div>{' '}
         <motion.div variants={slideLeft} className='card'>
@@ -98,7 +126,11 @@ const Projects = () => {
             <div className='img-overlay'>
               <h3>King's College Tutoring</h3>
             </div>
-            <img src={KingsCollegeTutoring} alt='React Framer' />
+            <picture>
+              <source srcSet={KingsCollegeTutoringw} type='image/webp' />
+              <source srcSet={KingsCollegeTutoring} type='image/jpeg' />
+              <img src={KingsCollegeTutoring} alt='React Framer' />
+            </picture>
           </a>
         </motion.div>
         <motion.div variants={slideRight} className='card'>
@@ -106,7 +138,11 @@ const Projects = () => {
             <div className='img-overlay'>
               <h3>King's College PSC</h3>
             </div>
-            <img src={KingsCollegePSC} alt='Music Player App' />
+            <picture>
+              <source srcSet={KingsCollegePSCw} type='image/webp' />
+              <source srcSet={KingsCollegePSC} type='image/jpeg' />
+              <img src={KingsCollegePSC} alt='Music Player App' />
+            </picture>
           </a>
         </motion.div>
         <motion.div variants={slideLeft} className='card'>
@@ -120,7 +156,11 @@ const Projects = () => {
         </motion.div>
       </ProjectsGrid>
       <ImgBG>
-        <img src={circle2} alt='circle2' />
+        <picture>
+          <source srcSet={circle2w} type='image/webp' />
+          <source srcSet={circle2} type='image/jpeg' />
+          <img src={circle2} alt='circle2' />
+        </picture>
       </ImgBG>
     </StyledProjects>
   )
