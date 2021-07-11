@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import circle1w from '../img/circle1.webp'
+// import circle1w from '../img/circle1.webp'
 import circle1 from '../img/circle1a.png'
 // Animation
 import { motion } from 'framer-motion'
